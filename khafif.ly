@@ -37,10 +37,10 @@ khafif = \relative do'' {
 \book
 {
   \score
-   {
-      \new Staff \with {midiInstrument = #"violin"} \khafif
-      \layout { }
-    }
+  {
+    \new Staff \with {midiInstrument = #"violin"} \khafif
+    \layout { }
+  }
   \score
   {
     \new StaffGroup

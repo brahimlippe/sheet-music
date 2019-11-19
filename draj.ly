@@ -1,7 +1,7 @@
 \language "italiano"
 \include "arabic.ly"
 \header {
-  title = "درج نوبة الرصد"
+  title = "درج نوبة الرصد العبيدي"
   composer = "إبراهيم الصحبي"
 }
 refrain = \relative do

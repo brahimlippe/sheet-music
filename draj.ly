@@ -3,6 +3,7 @@
 \header {
   title = "درج نوبة الرصد العبيدي"
   composer = "إبراهيم الصحبي"
+  copyright = "مالوف تونس باريس"
 }
 refrain = \relative do
 {

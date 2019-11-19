@@ -3,6 +3,7 @@
 \header {
   title = "خفيف نوبة الرصد العبيدي"
   composer = "إبراهيم الصحبي"
+  copyright = "مالوف تونس باريس"
 }
 refrain = \relative do'
 {
@@ -15,7 +16,7 @@ refrain = \relative do'
   do2 sol4 do2 re4 |
   mib4. (re8) fad mib re do re4 r4 |
 }
-nota = \relative do'' {
+khafif = \relative do'' {
   \time 6/4
   la sol mi re do la16 (sisb la sisb |
   sol4) do8 re mi8. re16 mi8 sol fa4 r |
@@ -37,7 +38,7 @@ nota = \relative do'' {
 {
   \score
    {
-      \new Staff \with {midiInstrument = #"violin"} \nota
+      \new Staff \with {midiInstrument = #"violin"} \khafif
       \layout { }
     }
   \score
@@ -49,7 +50,7 @@ nota = \relative do'' {
         \time 6/4
         \repeat unfold 26 {bd4 r sn sn sn r}
       }
-      \new Staff \with {midiInstrument = #"violin"} \nota
+      \new Staff \with {midiInstrument = #"violin"} \khafif
     >>
     \midi {
     \tempo 4 = 100

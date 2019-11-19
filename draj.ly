@@ -52,7 +52,7 @@ nota = \relative do' {
       \new Staff \new DrumStaff \drummode
       {
         \time 6/4
-        \repeat unfold 4 {bd4 bd4 sn4 sn4 sn4 sn8 sn8}
+        \repeat unfold 4 {bd4 bd sn sn sn sn8 sn}
       }
       \new Staff \with {midiInstrument = #"violin"} \nota
     >>

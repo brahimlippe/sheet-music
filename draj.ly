@@ -24,7 +24,7 @@ nota = \relative do' {
     sol8 sol16 la fa8 fa16 sol mi8 mi16 fa re8 do16 mi re4 r |
     do8 re4 do8. re8 do16 re8 do8 (la16 sisb la sisb sol4) |
   }
-  \repeat volta 3
+  \repeat volta 5
   {
     \refrain
   }

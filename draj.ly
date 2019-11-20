@@ -4,6 +4,7 @@
   title = "درج نوبة الرصد العبيدي"
   composer = "إبراهيم الصحبي"
   copyright = "مالوف تونس باريس"
+  tagline=""
 }
 refrain = \relative do
 {

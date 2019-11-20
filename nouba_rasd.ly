@@ -1,7 +1,7 @@
 \language "italiano"
 \include "arabic.ly"
 \header {
-  title = "درج نوبة الرصد العبيدي"
+  title = "نوبة الرصد العبيدي"
   composer = "إبراهيم الصحبي"
   copyright = "مالوف تونس باريس"
   tagline=""
@@ -14,6 +14,14 @@ DCcoda = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
   \mark \markup { \small "D.C. al coda" }
 }
+DScoda = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
+  \mark \markup { \small "D.S. al coda" }
+}
+Segno = {
+  \once \override Score.RehearsalMark #'break-visibility = #'#(#f #t #t)
+  \mark \markup { \small \musicglyph #"scripts.segno" }
+}
 draj = \relative do' {
   \time 6/4
   \repeat volta 2
@@ -25,6 +33,7 @@ draj = \relative do' {
   }
   \repeat volta 5
   {
+    \Segno
     mi'8 fa16 sol mi8 re do4 re mi8 fa16 sol mi8 re |
     mi re mi fa sol4 fa8 la sol4 r |
     do do8 si si16 la si do si8 la la4. r8 |
@@ -42,18 +51,22 @@ draj = \relative do' {
     sol2 fa16 (sol fa sol fa8) sol la4. r8 |
     mi8 fa16 sol mi8 re do4 mi8. re16 re4. r8 |
   }
-  \DCcoda
+  \DScoda
 }
 khafif = \relative do'' {
   \time 6/4
-  la4 sol mi re do la16 (sisb la sisb |
-  sol4) do8 re mi8. re16 mi8 sol fa4 r |
-  sol4 fa mi fa sol mi |
-  re la'2 sol4 mi8 fa mi fa |
-  re4 do8 re mi sol fa mi re2 |
-  r4 do re do la16 (sisb la sisb sol4) |
+  \repeat volta 2
+  {
+    la4 sol mi re do la16 (sisb la sisb |
+    sol4) do8 re mi8. re16 mi8 sol fa4 r |
+    sol4 fa mi fa sol mi |
+    re la'2 sol4 mi8 fa mi fa |
+    re4 do8 re mi sol fa mi re2 |
+    r4 do re do la16 (sisb la sisb sol4) |
+  }
   \repeat volta 5
   {
+    \Segno
     r sol' la8 si do re do4 la |
     la la8 sol sol fa la sol sol fa fa mi |
     fa4 r2 sol4 fa mi |
@@ -71,7 +84,7 @@ khafif = \relative do'' {
     r4 sol4 fa8 sol fa misb re2 |
     fa8 (misb fa4) sol16 la sol8 fa misb re2 |
   }
-  \DCcoda
+  \DScoda
 }
 khatem = \relative do' {
   \time 6/8
@@ -113,18 +126,112 @@ khatem = \relative do' {
   }
   \DCcoda
 }
-nouba = 
+baligh = \relative do''
 {
-  \draj
-  \khafif
-  \khatem
+  \time 4/4
+  r4 r8 sol8. sol8 mi16 re8 sol16 la |
+  \repeat volta 5
+  {
+    \Segno
+    sol16 la8.~ la8 sol mi re re16 mi fa sol |
+    fa mi re mi re mi do si do re8. mi8 re |
+    sol16 fa la sol sol8 la (sol16) mi8 (re16) re fa mi re |
+    mi32 (re do16) do (si) do r do8 re16 mi8 fa16 mi8 re |
+    re16 fa mi re do si do8 re4 re8 (do) |
+  }
+  \alternative
+  {
+    { la32 (sisb la sisb sol8) \Coda r sol'8. sol8 mi16 re8 sol16 (la) | }
+    { la,32 (sisb la sisb sol8) r do8. do8. do8 re8 | }
+  }
+  mib re fad16 mib re (do) re4. do8 |
+  la32 sisb la sisb sol8 r do8. re8. mi8 re |
+  sol4 r8 la (sol16) mi8 (re16) re fa mi re |
+  mi32 (re do16) do (si) do16 r do8 re16 (mi8) fa16 mi8 (re) |
+  re16 fa mi re do si do8 re4. do8 |
+  la32 sisb la sisb sol8 r sol'8. sol8 mi16 re8 la16 la |
+  \DScoda
+}
+ya_hibi = \relative do''
+{
+  \time 4/4
+  r4 r8 la8. la8. sol8 fa |
+  \repeat volta 5
+  {
+    \Segno
+    sol sol r sol (fa16) sol8. fa8 mi |
+    fa sol fa sol mi re mi fa |
+    sol la r la (sol16) mi8. re8 do |
+    re mi r re (do16) re8 (do16) re8 do |
+  }
+  \alternative
+  {
+    { la16 sisb sol8 \Coda r la' la16 la8. sol8 fa }
+    { la,16 sisb sol8 r fa' mi16 fa8 mi16 fa32 (sol fa16 mi8) }
+  }
+  re4 r8 do8. re8. sol8 sol |
+  fa16 mi sol fa fa8 sol mi32 fa mi16 re8 re16 fa mi fa |
+  re4 r8 mi (fa16) sol8. r8 fa16 sol |
+  la16 sib la sol fa8 r fa sol la16 sib la8 |
+  sol fa r la sol mi re do |
+  do4. re8 mi do re4 |
+  r4 r8 fa mi16 fa8 mi16 fa32 (sol fa16 mi8) |
+  re4 r8 do8. re8. sol8 sol |
+  fa16 mi sol fa fa8 sol mi32 fa mi16 re8 re16 fa mi fa |
+  re4 r8 mi (fa16) sol8. r8 fa16 sol |
+  la sib la sol fa8 r fa sol la16 sib la8 |
+  sol fa r la sol mi re do |
+  do4. re8 mi do re (do) |
+  la16 sisb sol8 r8 la8. la8. sol8 fa |
+  \DScoda
 }
 \book
 {
   \score
   {
-    \new Staff \with {midiInstrument = #"violin"} \nouba
+    \new Staff {do'1} % abyat
     \layout { }
+    \header
+    {
+      piece = "الأبيات"
+      breakbefore = ##t
+    }
+  }
+  \score
+  {
+    \new Staff {do'1} % btayhi 1
+    \layout { }
+    \header { piece = "بطايحي جئت بالإحتقار" }
+  }
+  \score
+  {
+    \new Staff \baligh
+    \layout { }
+    \header { piece = "بطايحي بلغ إلى أهل الديار" }
+  }
+  \score
+  {
+    \new Staff \ya_hibi
+    \layout { }
+    \header { piece = "بطايحي يا حبي ما لك" }
+  }
+  \score
+  {
+    \new Staff \draj
+    \layout { }
+    \header { piece = "درج يا هل ترى متى ترجع" }
+  }
+  \score
+  {
+    \new Staff \khafif
+    \layout { }
+    \header { piece = "خفيف أفناني الحب يا نديم" }
+  }
+  \score
+  {
+    \new Staff \khatem
+    \layout { }
+    \header { piece = "ختم السم من ألسن الأفاعي" }
   }
   \score
   {
@@ -135,7 +242,13 @@ nouba =
         \time 6/4
         \repeat unfold 4 {bd4 bd sn sn sn sn8 sn}
       }
-      \new Staff \with {midiInstrument = #"violin"} \nouba
+      \new Staff \with {midiInstrument = #"violin"}
+      {
+        \ya_hibi
+        \draj
+        \khafif
+        \khatem
+      }
     >>
     \midi {
     \tempo 4 = 80

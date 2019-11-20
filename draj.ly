@@ -51,6 +51,13 @@ nota = \relative do' {
    {
       \new Staff \with {midiInstrument = #"violin"} \nota
       \layout { }
+      \header {
+  title = "درج نوبة الرصد العبيدي"
+  composer = "إبراهيم الصحبي"
+  copyright = "مالوف تونس باريس"
+  tagline=""
+}
+
     }
   \score
   {

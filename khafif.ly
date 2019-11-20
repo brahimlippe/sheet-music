@@ -36,7 +36,7 @@ khafif = \relative do'' {
   }
   \repeat volta 2
   {
-    r sol' fa8 misb misb re re4 re8 do |
+    r sol fa8 misb misb re re4 re8 do |
     re4. (do8) fa (misb) sol (fa) fa (misb) fa4 |
     r4 sol4 fa8 sol fa misb re2 |
     fa8 (misb fa4) sol16 la sol8 fa misb re2 |

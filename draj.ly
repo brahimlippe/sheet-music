@@ -14,18 +14,6 @@ DCcoda = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
   \mark \markup { \small "D.C. al coda" }
 }
-refrain = \relative do
-{
-  mi'8 fa16 sol mi8 re do4 re mi8 fa16 sol mi8 re |
-  mi re mi fa sol4 fa8 la sol4 r |
-  do do8 si si16 la si do si8 la la4. r8 |
-  sol la sol fa mi re mi fa sol4 r |
-  mi8 fa16 sol mi8 re do4 re4 mi8 fa16 sol16 mi8 re |
-  mi re mi fa sol4 fa8 la sol4 r |
-  mi8 fa16 sol mi8 re do4 mi re r |
-  re4. do8 re do re do la16 sisb la sisb sol8 r |
-  \Coda
-}
 nota = \relative do' {
   \time 6/4
   \repeat volta 2

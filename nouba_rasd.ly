@@ -185,6 +185,43 @@ ya_hibi = \relative do''
   la16 sisb sol8 r8 la8. la8. sol8 fa |
   \DScoda
 }
+jitou = \relative do'
+{
+  \time 4/4
+  r4 r8 re8 mi16 fa sol mi fa4 |
+  \Segno do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
+  r8 mi4 re8 re do re mi |
+  do re4 (mi8) fa16 (sol fa mi) fa4 |
+  r8 sol4 (fa8) sol32 (la sol16 fa mi) fa4 |
+  r4 r8 re mi16 fa sol mi fa4 |
+  do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
+  r8 mi4 re8 re do re mi |
+  do re4 (mi8) fa16 sol fa mi fa4 |
+  r8 sol4 (fa8) sol32 (la sol16 fa mi) fa4~ |
+  fa4 r8 sol8. sol8. sol4 |
+  r8 sol4 la8 sol mi re4 |
+  r4 r8 do' (sisb16) la8 (sol16) sol4 |
+  r8 sol4 la8 sol mi re4 |
+  r8 sol4 la8 sol4 sol16 (la sol la) |
+  sol8 fa4 sol8 la4 do16 (sib la sol |
+  fa4) r8 la (sol16) mi8 (re16) re4 |
+  do8 re4 (do8) re do la sol \Coda |
+  r8 r4 do'8 (sisb16) la8 (sol16) sol4 |
+  \repeat volta 3
+  {
+    r8 sol4 la8 sol mi re4 |
+    r8 sol4 la8 sol4 sol16 (la sol la) |
+    sol8 fa4 sol8 la4 do16 (sib la sol |
+    fa4) r8 la8 (sol16) mi8 (re16) re4 |
+    do8 re4 do8 fa16 mi fa sol la sol fa mi |
+  }
+  \alternative
+  {
+    { re4 r8 do' (sisb16) la8 (sol16) sol4 |}
+    { re4 r8 re8 mi16 fa sol mi fa4 | }
+  }
+  \DScoda
+}
 \book
 {
   \score
@@ -194,12 +231,13 @@ ya_hibi = \relative do''
     \header
     {
       piece = "الأبيات"
-      breakbefore = ##t
+      % Première page vide
+      % breakbefore = ##t
     }
   }
   \score
   {
-    \new Staff {do'1} % btayhi 1
+    \new Staff \jitou
     \layout { }
     \header { piece = "بطايحي جئت بالإحتقار" }
   }
@@ -244,6 +282,8 @@ ya_hibi = \relative do''
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
+        \jitou
+        \baligh
         \ya_hibi
         \draj
         \khafif

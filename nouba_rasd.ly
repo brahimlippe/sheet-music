@@ -222,11 +222,44 @@ jitou = \relative do'
   }
   \DScoda
 }
+abyat = \relative do''
+{
+  \time 2/4
+  \repeat volta 2
+  {
+    sol8 sol16 sol sol8 la |
+    sol16 la8 sol16 mi8 re |
+    r8 do'16 sisb sisb do la8 |
+    sol16 la8 sol16 mi8 re |
+    r8 re16 re re8 mi |
+    re16 sol fa sol la4 |
+    r8 la16 sol mi8 re |
+  }
+  \alternative
+  {
+    { do mi re4}
+    { do8 mi re do}
+  }
+  re16 do8 la16 sol4 |
+  \time 4/4
+  r8 sol16 sol sol8 do8. re8 mi16 fa8. sol16 |
+  \repeat volta 2
+  {
+    mi16 fa mi fa re8 mi re16 sol fa sol la4 |
+    r8 la16 sol mi8 re do mi re do |
+  }
+  \alternative
+  {
+    la sol4 sol' do16 re8 mi16 fa8. sol16 |
+    la8 sol4. r8 do16 re mi fa sol fa sol |
+  }
+  % TODO
+}
 \book
 {
   \score
   {
-    \new Staff {do'1} % abyat
+    \new Staff \abyat
     \layout { }
     \header
     {
@@ -282,6 +315,7 @@ jitou = \relative do'
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
+        \abyat
         \jitou
         \baligh
         \ya_hibi

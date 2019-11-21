@@ -250,8 +250,8 @@ abyat = \relative do''
   }
   \alternative
   {
-    la sol4 sol' do16 re8 mi16 fa8. sol16 |
-    la8 sol4. r8 do16 re mi fa sol fa sol |
+    { la sol4 sol'8 do16 re8 mi16 fa8. sol16 |}
+    { la8 sol4. r16 do re mi fa sol fa sol | }
   }
   % TODO
 }

@@ -293,7 +293,7 @@ abyat = \relative do''
   sol32 fad sol la sol16 mi re8 r16 sol sol sol8 la16 la do sisb8 |
   sisb32 do sisb do la4 la8 sol16 la8 sol16 mi8 re |
   sol16 fa mi re do8 do16 do8 re mi16 fa8 fa16 sol |
-  mi16 fa mi fa re8 la la16 sol8 sol16 fa8 mi |
+  mi16 fa mi fa re8 la' la16 sol8 sol16 fa8 mi |
   fa16. mi32 fa16 sol fa8 sol mi re mi re |
   r8 sol16 sol la8 sol la sol mi re |
   r8 do16 re mi8 re mi do32 re do mi re4 |

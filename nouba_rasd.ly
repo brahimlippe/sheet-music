@@ -378,11 +378,12 @@ dkhoul_btayhi = \relative do'
       \new Staff \new DrumStaff \drummode
       {
         \time 6/4
-        \repeat unfold 4 {bd4 bd sn sn sn sn8 sn}
+        %\repeat unfold 4 {bd4 bd sn sn sn sn8 sn}
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
         \abyat
+        \dkhoul_btayhi
         \jitou
         \baligh
         \ya_hibi

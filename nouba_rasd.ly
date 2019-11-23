@@ -250,10 +250,72 @@ abyat = \relative do''
   }
   \alternative
   {
-    { la sol4 sol'8 do16 re8 mi16 fa8. sol16 |}
+    { la sol4 sol'8 do,16 re8 mi16 fa8. sol16 |}
     { la8 sol4. r16 do re mi fa sol fa sol | }
   }
-  % TODO
+  mi fa mi fa re4 r16 do re mi fa8. sol16 |
+  mi16 fa mi fa re8 sol8. sol8 sol16 sol4 |
+  sol16 fa mi re do8 la la16 sol8. fa8 mi |
+  fa16. mi32 fa16 sol fa8 sol mi re mi re |
+  r8 sol16 sol la8 sol la sol mi re |
+  r8 do16 re mi8 re do16 re8 do16 la8 sol |
+  \repeat volta 2
+  {
+    r8 sol'16 sol sol8 la sol16 la sol la sisb4 |
+    r8 la16 la la8 la sol16 la8 sol16 mi8 re |
+    r8 re16 re re8 mi re16 sol fa sol la4 |
+  }
+  \alternative
+  {
+    { r8 la16 sol mi8 re do mi re4 }
+    { r8 la'16 sol mi8 re do mi re do }
+  }
+  la sol4 do'8 sisb16 sisb8 la16 la32 sol la sisb la16 sol |
+  sol4 r8 sol8 re16 sol8 la16 la do sisb8 |
+  \grace {la16 (sol } la4.) la8 sol16 la8 sol16 mi8 re |
+  sol16 fa mi re do4\turn r16 do16 re mi fa8. sol16 |
+  mi fa mi fa re8 la' sol16 sol8 sol16 sol8 sib16 la |
+  sol16 fa mi re do8 la' la16 sol8. fa8 mi |
+  fa16. mi32 fa16 sol fa8 sol mi re mi re |
+  r8 sol16 sol la8 sol la sol mi re |
+  r8 do16 re mi8 re mi do re32 do re mi re16 do |
+  la8 sol r sol'8. sol8 sol16 sol mi re8~ |
+  \repeat volta 2
+  {
+    re re16 re re8 mi re16 sol fa sol la4 |
+    r8 la16 sol mi8 re do mi re do |
+  }
+  \alternative
+  {
+    { la sol4 sol'8. sol8 sol16 sol mi re8 }
+    { la sol4 sol'16 do sisb16 sisb8 sisb16 la8. sol16 }
+  }
+  sol32 fad sol la sol16 mi re8 r16 sol sol sol8 la16 la do sisb8 |
+  sisb32 do sisb do la4 la8 sol16 la8 sol16 mi8 re |
+  sol16 fa mi re do8 do16 do8 re mi16 fa8 fa16 sol |
+  mi16 fa mi fa re8 la la16 sol8 sol16 fa8 mi |
+  fa16. mi32 fa16 sol fa8 sol mi re mi re |
+  r8 sol16 sol la8 sol la sol mi re |
+  r8 do16 re mi8 re mi do32 re do mi re4 |
+}
+dkhoul_btayhi = \relative do'
+{
+  \time 2/4
+  sol8 sol16 sol sol8 la |
+  sol16 la8 sol16 mi8 re |
+  r8 re16 re re8 mi |
+  re16 sol fa sol la4 |
+  r8 la16 sol mi8 re |
+  do mi re do |
+  la sol r8 do' |
+  sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
+  \grace { do16 (sisb } la8) la16 la la8 sol |
+  sib la fa16 sol fad mib |
+  re8 re16 re8. re8 |
+  re16 mi8 re16 sol4 |
+  \time 4/4
+  r8 la16 sol mi8 re do mi re do |
+  la sol r8 sol8
 }
 \book
 {
@@ -267,6 +329,12 @@ abyat = \relative do''
       % Première page vide
       % breakbefore = ##t
     }
+  }
+  \score
+  {
+    \new Staff \dkhoul_btayhi
+    \layout { }
+    \header { piece = "بطايحي جئت بالإحتقار" }
   }
   \score
   {

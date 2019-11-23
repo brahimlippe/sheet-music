@@ -188,7 +188,7 @@ ya_hibi = \relative do''
 jitou = \relative do'
 {
   \time 4/4
-  la8 sol r8 re8 mi16 fa sol mi fa4 |
+  la8 sol r8 re'8 mi16 fa sol mi fa4 |
   \Segno do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
   r8 mi4 re8 re do re mi |
   do re4 (mi8) fa16 (sol fa mi) fa4 |
@@ -298,7 +298,7 @@ abyat = \relative do''
   r8 sol16 sol la8 sol la sol mi re |
   r8 do16 re mi8 re mi do32 re do mi re4 |
 }
-dkhoul_btayhi = \relative do'
+dkhoul_btayhi = \relative do''
 {
   \time 2/4
   sol8 sol16 sol sol8 la |

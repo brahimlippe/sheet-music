@@ -110,6 +110,7 @@ touchia = \relative do' {
   sol16 fa mi re do8 mi mi16 re do sisb la4 |
 }
 draj = \relative do' {
+  \key do \major
   \time 6/4
   \repeat volta 2
   {
@@ -141,6 +142,7 @@ draj = \relative do' {
   \DScoda
 }
 khafif = \relative do'' {
+  \key do \major
   \time 6/4
   \repeat volta 2
   {
@@ -174,6 +176,7 @@ khafif = \relative do'' {
   \DScoda
 }
 alsommou = \relative do' {
+  \key do \major
   \time 6/8
   \repeat volta 4 {
     mi4 (re8 do re) mi |
@@ -215,6 +218,7 @@ alsommou = \relative do' {
 }
 baligh = \relative do''
 {
+  \key do \major
   \time 4/4
   \repeat volta 2
   {
@@ -247,6 +251,7 @@ baligh = \relative do''
 }
 ya_hibi = \relative do''
 {
+  \key do \major
   \time 4/4
   r4 r8 la8. la8. sol8 fa |
   \repeat volta 5
@@ -280,6 +285,7 @@ ya_hibi = \relative do''
 }
 jitou = \relative do'
 {
+  \key do \major
   \time 4/4
   la8 sol r8 re'8 mi16 fa sol mi fa4 |
   \Segno do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
@@ -317,6 +323,7 @@ jitou = \relative do'
 }
 abyat = \relative do''
 {
+  \key do \major
   \time 2/4
   \repeat volta 2
   {
@@ -395,6 +402,7 @@ abyat = \relative do''
 }
 dkhoul_btayhi = \relative do''
 {
+  \key do \major
   \time 2/4
   sol8 sol16 sol sol8 la |
   sol16 la8 sol16 mi8 re |
@@ -411,13 +419,33 @@ dkhoul_btayhi = \relative do''
   \time 4/4
   r8 la16 sol mi8 re do mi re do |
 }
-imchi_ya_rasoul = \relative do' do1
+imchi_ya_rasoul = \relative do'
+{
+  \key do \major
+  \time 2/4
+  \repeat volta 5
+  {
+    re16 re8 re16 re8 mi( |
+    mi) re16 mi16 ~ mi re sol8 |
+    la16 la8 la16 ~ la16 sol sol8( |
+    sol) fad16 sol ~ sol mi \coda re8 |
+  }
+  \repeat volta 2
+  {
+    do16 do8 do16 ~ do re mib8(|
+    mib8 ) re16 mib ~ mib do re8 |
+    la16 la8 la16 ~ la sol sol8 |
+    sol fad16 sol ~ sol mi re8 |
+    \DCcoda
+  }
+}
 kharajtou_nachwana = \relative do' do1
-nar_elhawa = \relative do' do1
+nar_elhawa = \imchi_ya_rasoul
 qalbi_musaikin = \relative do' do1
 arodhni_nahar = \relative do' do1
 ya_farhati = \relative do''
 {
+  \key do \major
   \time 2/4
   \repeat volta 5
   {
@@ -434,6 +462,7 @@ ya_farhati = \relative do''
 }
 aini_kahila = \relative do''
 {
+  \key do \major
   \repeat volta 5
   {
     r8 sol4 sol4 fa8 sol4 |
@@ -490,7 +519,7 @@ aini_kahila = \relative do''
   {
     \new Staff \touchia
     \layout { }
-    \header { piece = "بطايحي يا حبي ما لك" }
+    \header { piece = "توشية" }
   }
   \score
   {
@@ -508,7 +537,7 @@ aini_kahila = \relative do''
   {
     \new Staff \imchi_ya_rasoul
     \layout { }
-    \header { piece = "يا فرحتي" }
+    \header { piece = "إمش يا رسول" }
   }
   \score
   {
@@ -526,7 +555,7 @@ aini_kahila = \relative do''
   {
     \new Staff \kharajtou_nachwana
     \layout { }
-    \header { piece = "يا فرحتي" }
+    \header { piece = "خرجت نشوانا" }
   }
   \score
   {

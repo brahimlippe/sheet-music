@@ -22,6 +22,12 @@ Segno = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#f #t #t)
   \mark \markup { \small \musicglyph #"scripts.segno" }
 }
+hroub = \drummode {
+    bd16 hh32 hh sn16 sn bd16 hh sn8
+}
+btayhi = \drummode {
+    bd8 hh16 sn8 hh16 sn8 hh8 bd8 sn4
+}
 touchia = \relative do' {
   \key re \bayati
   \time 2/4
@@ -219,41 +225,68 @@ alsommou = \relative do' {
 baligh = \relative do''
 {
   \key do \major
-  \time 4/4
+  sol8. sol8 mi16 re8 r16 sol |
   \repeat volta 2
   {
-    r4 r8 sol8. sol8 mi16 re8 r16 sol |
     sol8 la4 sol8 mi re mi16 re sol8 |
     fa32 sol fa sol mi16 re r8 do8. re8. mi8 re |
     sol8 la4 sol8 sol16 mi8 re16 fa32 mi fa sol fa16 mi |
     mi16. re32 do16 re do8 r8 mi16 mi8. mi8 re8 |
     mi16 fa32 sol mi fa re mi do16 si do8 mi16 re8. re8 do |
   }
+  \alternative
+  {
+    { la sol r sol'8. sol8 mi16 re8 r16 sol | }
+    { la,8 sol r \Segno la' sisb16 sisb8 la16 la sol sol re | }
+  }
   \repeat volta 3
   {
-    \Segno
-    la8 sol r la' sisb16 sisb8 la16 la sol sol re |
     sol8 la4 sol8 mi re mi16. re32 sol16 sol32 fa |
     fa32 sol fa sol mi16 re r8 do do16 re8. mi8 re |
     sol la4 la8 sol16 mi8 re16 fa32 mi fa sol fa16 mi |
     mi16. re32 do16 re do8 r8 mi16 mi8. ~ mi8 re |
     mi16 fa32 sol mi fa re mi do16 si do8 mi16 re8. re8 do |
   }
+  \alternative
+  {
+    { la sol r la' sisb16 sisb8 la16 la sol sol re | }
+    { la8 sol r do8 do16 re8. mib8 mib16 re | }
+  }
   \repeat volta 3
   {
-    la sol r do do16 re8. mib8 mib16 re mib re mib fad mib fad re8 r16 re8 do16 re8 do |
+    mib re mib fad mib fad re8 r16 re8 do16 re8 do |
   }
-  la sol r do do16 re8. mi8 re |
+  \alternative
+  {
+    { la sol r do8 do16 re8. mib8 mib16 re | }
+    { la8 sol r do8 do16 re8. mi8 re | }
+  }
   sol la4 la8 sol16 mi8 re16 fa32 mi fa sol fa16 mi |
   mi16. re32 do16 re do8 r mi16 mi8. ~ mi8 re |
   mi16 fa mi re do si do8 mi16 re8. re8 do |
+  la sol r8
   \DScoda
+}
+fargha_btayhi = \relative do'
+{
+  \set Timing.measurePosition = #(ly:make-moment -5/8)
+  fa16 mi re do re mi fa4 |
+  \repeat volta 2
+  {
+    r8 sol16 fa sol8 sol (sol16) fa8 (sol16) la4 |
+    r8 la16 la la8 la (sol16) la8 (sol16) mi8 re |
+    r8 do16 re mi8 re do mi re do |
+  }
+  \alternative
+  {
+    { la sol r8 fa'16 mi re do re mi fa4 | }
+    { la,8 sol r8 }
+  }
 }
 ya_hibi = \relative do''
 {
   \key do \major
-  \time 4/4
-  r4 r8 la8. la8. sol8 fa |
+  la8. la8. sol8 fa |
   \repeat volta 5
   {
     \Segno
@@ -404,18 +437,21 @@ dkhoul_btayhi = \relative do''
 {
   \key do \major
   \time 2/4
-  sol8 sol16 sol sol8 la |
-  sol16 la8 sol16 mi8 re |
-  r8 re16 re re8 mi |
-  re16 sol fa sol la4 |
-  r8 la16 sol mi8 re |
-  do mi re do |
-  la sol r8 do' |
-  sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
-  \grace { do16 (sisb } la8) la16 la la8 sol |
-  sib la fad16 sol fad mib |
-  re8 re16 re8. re8 |
-  re16 mi8 re16 sol4 |
+  \repeat volta 2
+  {
+    sol8 sol16 sol sol8 la |
+    sol16 la8 sol16 mi8 re |
+    r8 re16 re re8 mi |
+    re16 sol fa sol la4 |
+    r8 la16 sol mi8 re |
+    do mi re do |
+    la sol r8 do' |
+    sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
+    \grace { do16 (sisb } la8) la16 la la8 sol |
+    sib la fad16 sol fad mib |
+    re8 re16 re8. re8 |
+    re16 mi8 re16 sol4 |
+  }
   \time 4/4
   r8 la16 sol mi8 re do mi re do |
 }
@@ -434,7 +470,7 @@ imchi_ya_rasoul = \relative do'
   {
     do16 do8 do16 ~ do re mib8(|
     mib8 ) re16 mib ~ mib do re8 |
-    la16 la8 la16 ~ la sol sol8 |
+    la'16 la8 la16 ~ la sol sol8 |
     sol fad16 sol ~ sol mi re8 |
     \DCcoda
   }
@@ -453,7 +489,7 @@ ya_farhati = \relative do''
     la16 la8 la16 la8 sol8( |
     fad16 ) sol8 (mi16) re4 |
     sol16 sol sol sol sol sol sol8 |
-    sol16 sol8 fa8 sol16 fa8 \coda |
+    sol16 sol8 fa8 sol16 la8 \coda |
   }
   mi16 mi8 mi16 mi8 mi( |
   re16) re8 re16 re4 |
@@ -465,17 +501,19 @@ aini_kahila = \relative do''
   \key do \major
   \repeat volta 5
   {
-    r8 sol4 sol4 fa8 sol4 |
-    mi8 re r sol4 sol8 sol4 |
-    sol8 sol4 fa sol8 la4 |
-    la8 la4 la sol8 sol (fa) |
-    sol4 la8 sol sol mi re4 |
-    r8 re4 re re8 mi fa |
-    sol4 la8 sol sol (mi) re4 \coda |
+    r8 sol4 sol8 (sol) sol sol mi |
+    re4 r8 sol16 sol sol8 sol sol4 |
+    sol8 sol (sol) fa (fa) sol la4 |
+    r8 la4 la sol8 sol fa |
+    sol la4 sol8 sol mi re4 |
+    r8 re re re (re) re mi4 |
+    re8 sol4 la8 (la) sol sol fa |
+    sol la4 sol8 sol mi re4 \coda |
   }
-  r8 do'4 re do8 la4 |
-  la8 sol4 la sol8 mi4
-  re8 re do mi4 re8 re4 |
+  r8 do'4 re8 (re) do la4 |
+  r8 sol4 la8 (la) sol mi4 |
+  r8 do (do) do4 re8 mib re |
+  la' sol fad re mib16 re mib fad re4|
   \DCcoda
 }
 \book
@@ -505,13 +543,13 @@ aini_kahila = \relative do''
   }
   \score
   {
-    \new Staff \baligh
+    \new Staff { r4 r8 \fargha_btayhi \baligh }
     \layout { }
     \header { piece = "بطايحي بلغ إلى أهل الديار" }
   }
   \score
   {
-    \new Staff \ya_hibi
+    \new Staff { \fargha_btayhi \ya_hibi }
     \layout { }
     \header { piece = "بطايحي يا حبي ما لك" }
   }
@@ -585,8 +623,37 @@ aini_kahila = \relative do''
   {
     \new Staff \with {midiInstrument = #"violin"}
     {
-      \abyat
-      \dkhoul_btayhi
+      \unfoldRepeats \abyat
+    }
+    \midi { \tempo 4 = 80 }
+  }
+  \score
+  {
+    \new StaffGroup
+    <<
+      \new Staff \new DrumStaff
+      {
+        \unfoldRepeats \repeat volta 24 \hroub
+        \unfoldRepeats \repeat volta 134 \btayhi
+      }
+      \new Staff \with {midiInstrument = #"violin"}
+      {
+        \unfoldRepeats \dkhoul_btayhi
+        \unfoldRepeats \jitou
+        r4 r8
+        \unfoldRepeats \fargha_btayhi
+        \unfoldRepeats \baligh
+        \unfoldRepeats \fargha_btayhi
+        \unfoldRepeats \ya_hibi
+      }
+    >>
+    \midi { \tempo 4 = 60 }
+  }
+  \score
+  {
+    \new Staff \with {midiInstrument = #"violin"}
+    {
+      \unfoldRepeats \touchia
     }
     \midi { \tempo 4 = 80 }
   }
@@ -594,31 +661,7 @@ aini_kahila = \relative do''
   {
     \new Staff \with {midiInstrument = #"violin"}
     {
-      \jitou
-    }
-    \midi { \tempo 4 = 80 }
-  }
-  \score
-  {
-    \new Staff \with {midiInstrument = #"violin"}
-    {
-      \baligh
-    }
-    \midi { \tempo 4 = 80 }
-  }
-  \score
-  {
-    \new Staff \with {midiInstrument = #"violin"}
-    {
-      \ya_hibi
-    }
-    \midi { \tempo 4 = 80 }
-  }
-  \score
-  {
-    \new Staff \with {midiInstrument = #"violin"}
-    {
-      \touchia
+      \unfoldRepeats \aini_kahila
     }
     \midi { \tempo 4 = 110 }
   }
@@ -626,23 +669,22 @@ aini_kahila = \relative do''
   {
     \new Staff \with {midiInstrument = #"violin"}
     {
-      \aini_kahila
-      \ya_farhati
-      \imchi_ya_rasoul
-      \kharajtou_nachwana
-      \nar_elhawa
-      \qalbi_musaikin
-      \arodhni_nahar
+      \unfoldRepeats \ya_farhati
+      \unfoldRepeats \imchi_ya_rasoul
+      \unfoldRepeats \kharajtou_nachwana
+      \unfoldRepeats \nar_elhawa
+      \unfoldRepeats \qalbi_musaikin
+      \unfoldRepeats \arodhni_nahar
     }
-    \midi { \tempo 4 = 110 }
+    \midi { \tempo 4 = 60 }
   }
   \score
   {
     \new Staff \with {midiInstrument = #"violin"}
     {
-      \draj
-      \khafif
-      \alsommou
+      \unfoldRepeats \draj
+      \unfoldRepeats \khafif
+      \unfoldRepeats \alsommou
     }
     \midi { \tempo 4 = 80 }
   }

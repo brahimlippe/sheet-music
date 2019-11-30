@@ -2,8 +2,9 @@
 \include "arabic.ly"
 \header {
   title = "نوبة الرصد العبيدي"
-  composer = "إبراهيم الصحبي"
-  copyright = "مالوف تونس باريس"
+  %composer = "إ براهيم الصحبي(الأبيات إلى الختم)أيمن مجول(إستفتاح إلى السلسلة)"
+  composer = "إ براهيم الصحبي / أيمن مجول"
+  copyright = "مالوف تونس باريس©"
   tagline=""
 }
 Coda = {
@@ -49,6 +50,99 @@ hroub = \drummode {
 btayhi = \drummode {
   \time 4/4
   bd8 hh16 sn8 hh16 sn8 hh8 bd8 sn4 |
+}
+istiftah = \relative do'
+{
+  do4 re do la sol2 r4 r8 do re mi fa4 mi \grace sol8 (fa4) mi16 fa mi8 re4
+  mi16 fa mi8 re4 r \tuplet 3/4 { sol8 fa sol } la4\fermata sol mi re do8. mi16
+  re4 r8 do re do la4 sol do8. re16 mi8. do16 \tuplet 3/4 { re8 do mi } re4
+  r \grace do8 (sisb'4.) la16 sisb la4. sol16 la sol4 r8 re mi re sol2
+  r16 do, re mi fa4 \grace sol8 mi4 \grace fa8 re4 do8. mi16 re4 r8
+  do re do la4 sol do2
+  \break
+}
+khana_one = \relative do''
+{
+  \time 6/4
+  \repeat volta 2
+  {
+    sol8 fa16 mi re do re mi fa8. sol16 fa8 sol mi16 fa mi fa re4 |
+    r8 sol16 sol sol8 la sol16 la8 sol16 mi8 re do16 re do mi re4 |
+    do16 re8 do16 la8 sol do4 re mib8 re16 do re4 |
+    sol16 la8. (la8) sol (sol16) mi8. mi8 re mi16 fa mi re do4 |
+    r8 do16 re do8 re mi fa mi re do16 re8 do16 la8 sol |
+  }
+}
+taslim = \relative do''
+{
+  \time 6/4
+  \repeat volta 2
+  {
+    r8 sol16 do si8 si la16 la8 sol16 mi8 re mi fad la16. sol32 sol8 |
+    r8 sol16 si la8 la sol16 la8 sol16 mi8 re do re mi16. re32 re8 |
+    r8 do16 do do8 re re16 mi8 re16 sol4 sol16 la8 sol16 mi8 re |
+    do' sisb la sol fad mib re do re16 mi8 re16 sol4 |
+    fa8 mi re do fa16 mi8 re16 re8 do do16 re8 do16 la8 sol |
+  }
+}
+khana_two = \relative do'
+{
+  \time 6/4
+  \repeat volta 2
+  {
+    r8 fad4 sol8 r16 la8 sib16 la sol fad sol fad mib re do re4 |
+    r8 fad4 sol8 r16 la sisb do sol16. la32 sol8 la4. sol8 |
+    r16 mi8 re16 mi8 \grace sol8 (fa16) mi do8 do16 re mi16. re32 mi16 fa sol4 r16 la sib do |
+    re8 do la sol r16 re8 mib16 fad8 la sol mib re do |
+  }
+  \alternative
+  {
+    { r8 do16 re mib16. re32 mib16 fad sol8 do do16 sib la sol fad sol fad la sol4 | }
+    { r8 do,16 re mib16. re32 mib16 fad sol8 do do16 sib la sol fad la sol8 r4 | }
+  }
+}
+khana_three = \relative do'
+{
+  \time 6/4
+  \repeat volta 2
+  {
+    sol16 do8. (do8) mib re16 sol8 fad16 la8 sol mib16 fad mib re mib16. re32 do8 |
+    r8 mib16 fad sol fad sol8 mib16 fad8 re16 mib8 sol16 do sib la sol la sib16. la32 sol8 |
+    r8 do16 sisb do8 la do16 sisb8 re16 do sisb do8 la16 sol do8 do32 re sisb do la sisb sol16 |
+    fad8 sol16 do sisb do la8 sib16 sol8 la16 fad sol mib re sol32 la sol la fad16 mib mib32 fad mib fad re16 do |
+  }
+}
+touq = \relative do'
+{
+  \time 6/4
+  r8 do16 do do8 re re16 mi8 re16 mi8 re re16 mi16 re8 sol4 |
+  r8 sol16 sol sol8 la sol16 la8 sol16 mi8 re mi16 sol fa mi re do do8 |
+  do4 re8 mi fa16 sol fa mi mi fa mi re mi8 fa sol4 |
+  \time 3/4
+  sol8 fa sol la la16 sib la sol |
+  fa8 mi fa sol sol16 la sol fa |
+  mi8 re mi fa fa16 sol fa mi |
+  re8 do re mi fa4 |
+  fa8 mi fa sol sol16 la sol fa |
+  mi8 re mi fa fa16 sol fa mi |
+  re8 do re mi fa mi |
+  re do re do la sol |
+}
+silsla = \relative do''
+{
+  \time 3/8
+  la8 la la |
+  sol8. fa16 sol la |
+  fa8. mi16 fa sol |
+  mi8. re16 mi fa |
+  sol8. fa16 sol la |
+  fa8. mi16 fa sol |
+  mi8. re16 mi fa |
+  re8. do16 re mi |
+  fa8. mi16 fa sol |
+  mi8. re16 mi fa |
+  re8. do16 re mi |
+  do8 r r |
 }
 touchia = \relative do' {
   \key la \bayati
@@ -550,13 +644,80 @@ aini_kahila = \relative do''
 {
   \score
   {
+    \new Staff \istiftah
+    \layout
+    {
+      \context
+      {
+        \Score defaultBarType = ""
+      }
+    }
+    \header
+    {
+      piece = "إستفتاح"
+    }
+  }
+  \score
+  {
+    \new Staff \khana_one
+    \layout { }
+    \header
+    {
+      piece = "مصدر"
+    }
+  }
+  \score
+  {
+    \new Staff \taslim
+    \layout { }
+    \header
+    {
+      piece = "تسليم"
+    }
+  }
+  \score
+  {
+    \new Staff \khana_two
+    \layout { }
+    \header
+    {
+      piece = "خانة 2 (نبيل غنوشي)"
+    }
+  }
+  \score
+  {
+    \new Staff \khana_three
+    \layout { }
+    \header
+    {
+      piece = "خانة 3(نذير بوعبيد)"
+    }
+  }
+  \score
+  {
+    \new Staff \touq
+    \layout { }
+    \header
+    {
+      piece = "طوق"
+    }
+  }
+  \score
+  {
+    \new Staff \silsla
+    \layout { }
+    \header
+    {
+      piece = "سلسلة"
+    }
+  }
+  \score
+  {
     \new Staff \abyat
     \layout { }
     \header
     {
       piece = "الأبيات"
-      % Première page vide
-      % breakbefore = ##t
     }
   }
   \score
@@ -648,6 +809,21 @@ aini_kahila = \relative do''
     \new Staff \alsommou
     \layout { }
     \header { piece = "ختم السم من ألسن الأفاعي" }
+  }
+  \score
+  {
+    \new Staff \with {midiInstrument = #"violin"}
+    {
+      \unfoldRepeats \istiftah
+      \unfoldRepeats \khana_one
+      \unfoldRepeats \taslim
+      \unfoldRepeats \khana_two
+      \unfoldRepeats \taslim
+      \unfoldRepeats \khana_three
+      \unfoldRepeats \touq
+      \unfoldRepeats \silsla
+    }
+    \midi { \tempo 4 = 80 }
   }
   \score
   {

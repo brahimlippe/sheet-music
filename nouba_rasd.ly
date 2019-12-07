@@ -1,15 +1,14 @@
 \language "italiano"
 \include "arabic.ly"
 \header {
-  title = "نوبة الرصد العبيدي"
-  %composer = "إ براهيم الصحبي(الأبيات إلى الختم)أيمن مجول(إستفتاح إلى السلسلة)"
-  composer = "إ براهيم الصحبي / أيمن مجول"
-  copyright = "مالوف تونس باريس©"
+  title = \markup { \huge "نوبة الرصد العبيدي" }
+  composer = "Transcription: Brahim SAHBI et Aymen MAJOUL"
+  copyright = "مالوف تونس باريس©Malouf Tunisien Paris"
   tagline=""
 }
-Coda = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#f #t #t)
-  \mark \markup { \small \musicglyph #"scripts.coda" }
+#(set-global-staff-size 22)
+\paper {
+  bottom-margin = 20
 }
 DCcoda = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
@@ -56,7 +55,7 @@ istiftah = \relative do'
   do4 re do la sol2 r4 r8 do re mi fa4 mi \grace sol8 (fa4) mi16 fa mi8 re4
   mi16 fa mi8 re4 r \tuplet 3/4 { sol8 fa sol } la4\fermata sol mi re do8. mi16
   re4 r8 do re do la4 sol do8. re16 mi8. do16 \tuplet 3/4 { re8 do mi } re4
-  r \grace do8 (sisb'4.) la16 sisb la4. sol16 la sol4 r8 re mi re sol2
+  r \grace do'8 (sisb4.) la16 sisb la4. sol16 la sol4 r8 re mi re sol2
   r16 do, re mi fa4 \grace sol8 mi4 \grace fa8 re4 do8. mi16 re4 r8
   do re do la4 sol do2
   \break
@@ -205,8 +204,10 @@ touchia = \relative do' {
   sol fa mi re do16 sisb do sisb la sol8 la16|
   sol8 do4 mi8 re16 fa8 mi16 sol8 la |
   sol16 fa mi re do8 mi mi16 re do sisb la4 |
+  \break r1_"إستخبار  بالعود العربي" |
+  \break r1_"قصيدة في الرصد العبيدي" |
 }
-ya_toura = \relative do' {
+ya_hal_tara = \relative do' {
   \key do \major
   \time 6/4
   \repeat volta 2
@@ -220,15 +221,14 @@ ya_toura = \relative do' {
   \repeat volta 5
   {
     \Segno
-    mi'8 fa16 sol mi8 re do4 re mi8 fa16 sol mi8 re |
+    \break mi'8 fa16 \mark \markup { \huge "درج يا هل ترى" } sol mi8 re do4 re mi8 fa16 sol mi8 re |
     mi re mi fa sol4 fa8 la sol4 r |
     do do8 si si16 la si do si8 la la4. r8 |
     sol la sol fa mi re mi fa sol4 r |
     mi8 fa16 sol mi8 re do4 re4 mi8 fa16 sol16 mi8 re |
     mi re mi fa sol4 fa8 la sol4 r |
     mi8 fa16 sol mi8 re do4 mi re r |
-    re4. do8 re do re do la16 sisb la sisb sol8 r |
-    \Coda
+    re4. do8 re do re do la16 sisb la sisb sol8 r\coda |
   }
   \repeat volta 3
   {
@@ -259,16 +259,15 @@ afnani = \relative do'' {
   }
   \repeat volta 5
   {
-    \Segno
-    r sol' la8 si do re do4 la |
+    \break \Segno
+    r sol' la8 \mark \markup { \huge "خفيف أفناني" } si do re do4 la |
     la la8 sol sol fa la sol sol fa fa mi |
     fa4 r2 sol4 fa mi |
     fa sol fa sol mi re |
     la'2 sol4 mi8 fa mi fa re4~ |
     re8 re4 (do8) re4 do la sol |
     do2 sol4 do2 re4 |
-    mib4. (re8) fad mib re do re4 r4 |
-    \Coda
+    mib4. (re8) fad mib re do re4 r4 \coda |
   }
   \repeat volta 2
   {
@@ -279,7 +278,7 @@ afnani = \relative do'' {
   }
   \DScoda
 }
-alsommou = \relative do' {
+assoummou = \relative do' {
   \key do \major
   \time 6/8
   \repeat volta 4 {
@@ -307,8 +306,7 @@ alsommou = \relative do' {
     do4 do8 do4 sol8 |
     la si do4 do8 do |
     mi4 re do |
-    mi re2 |
-    \Coda
+    mi re2\coda |
   }
   \repeat volta 2
   {
@@ -326,7 +324,7 @@ baligh = \relative do''
   sol8. sol8 mi16 re8 r16 sol |
   \repeat volta 2
   {
-    sol8 la4 sol8 mi re mi16 re sol8 |
+    \mark \markup { \huge "إنشاد"} sol8 la4 sol8 mi re mi16 re sol8 |
     fa32 sol fa sol mi16 re r8 do8. re8. mi8 re |
     sol8 la4 sol8 sol16 mi8 re16 fa32 mi fa sol fa16 mi |
     mi16. re32 do16 re do8 r8 mi16 mi8. mi8 re8 |
@@ -384,7 +382,7 @@ fargha_btayhi = \relative do'
 ya_hibi = \relative do''
 {
   \key do \major
-  la8. la8. sol8 fa |
+  \mark \markup { \huge "إنشاد"} la8. la8. sol8 fa |
   \repeat volta 5
   {
     \Segno
@@ -395,7 +393,7 @@ ya_hibi = \relative do''
   }
   \alternative
   {
-    { la16 sisb sol8 \Coda r la' la16 la8. sol8 fa }
+    { la16 sisb sol8 \coda r la' la16 la8. sol8 fa }
     { la,16 sisb sol8 r fa' mi16 fa8 mi16 fa32 (sol fa16 mi8) }
   }
   re4 r8 do8. re8. sol8 sol |
@@ -435,7 +433,7 @@ jitou = \relative do'
   r8 sol4 la8 sol4 sol16 (la sol la) |
   sol8 fa4 sol8 la4 do16 (sib la sol |
   fa4) r8 la (sol16) mi8 (re16) re4 |
-  do8 re4 (do8) re do la sol \Coda |
+  do8 re4 (do8) re do la sol \coda |
   r8 r4 do'8 (sisb16) la8 (sol16) sol4 |
   \repeat volta 3
   {
@@ -482,7 +480,7 @@ abyat = \relative do''
   \alternative
   {
     { la sol4 sol'8 do,16 re8 mi16 fa8. sol16 |}
-    { la,8 sol4. r16 do re mi fa sol fa sol | }
+    { \break \mark \markup { \huge "الأبيات"} la,8 sol4. r16 do re mi fa sol fa sol | }
   }
   mi16 fa mi fa re4 r16 sol16 sol sol sol4 |
   sol8 la4 la8 sol16 la8 sol16 mi8 re |
@@ -494,7 +492,7 @@ abyat = \relative do''
   r8 do16 re mi8 re do16 re8 do16 la8 sol |
   \repeat volta 2
   {
-    r8 sol'16 sol sol8 la sol16 la sol la sisb4 |
+    \break \mark \markup { \huge "فارغة"} r8 sol'16 sol sol8 la sol16 la sol la sisb4 |
     r8 la16 la la8 la sol16 la8 sol16 mi8 re |
     r8 re16 re re8 mi re16 sol fa sol la4 |
   }
@@ -503,7 +501,7 @@ abyat = \relative do''
     { r8 la16 sol mi8 re do mi re4 }
     { r8 la'16 sol mi8 re do mi re do }
   }
-  la sol4 do'8 sisb16 sisb8 la16 la32 sol la sisb la16 sol |
+  \break la sol4 \mark \markup { \huge "إنشاد"} do'8 sisb16 sisb8 la16 la32 sol la sisb la16 sol |
   sol4 r8 sol8 re16 sol8 la16 la do sisb8 |
   \grace {do16 (si } la4.) la8 sol16 la8 sol16 mi8 re |
   sol16 fa mi re do4\turn r16 do16 re mi fa8. sol16 |
@@ -515,13 +513,13 @@ abyat = \relative do''
   la8 sol r sol'8. sol8 sol16 sol mi re8~ |
   \repeat volta 2
   {
-    re re16 re re8 mi re16 sol fa sol la4 |
+    \break \mark \markup { \huge "فارغة"} re re16 re re8 mi re16 sol fa sol la4 |
     r8 la16 sol mi8 re do mi re do |
   }
   \alternative
   {
     { la sol4 sol'8. sol8 sol16 sol mi re8 }
-    { la sol4 sol'16 do sisb16 sisb8 sisb16 la8. sol16 }
+    { \mark \markup { \huge "إنشاد"} la sol4 sol'16 do sisb16 sisb8 sisb16 la8. sol16 }
   }
   sol32 fad sol la sol16 mi re8 r16 sol sol sol8 la16 la do sisb8 |
   sisb32 do sisb do la4 la8 sol16 la8 sol16 mi8 re |
@@ -654,7 +652,7 @@ aini_kahila = \relative do''
     }
     \header
     {
-      piece = "إستفتاح"
+      piece = \markup { \huge "إستفتاح" }
     }
   }
   \score
@@ -663,7 +661,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "مصدر"
+      piece = \markup { \huge "مصدر" }
     }
   }
   \score
@@ -672,7 +670,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "تسليم"
+      piece = \markup { \huge "تسليم" }
     }
   }
   \score
@@ -681,7 +679,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "خانة 2 (نبيل غنوشي)"
+      piece = \markup { \huge "خانة 2 (Nabil Ghanouchi)" }
     }
   }
   \score
@@ -690,7 +688,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "خانة 3(نذير بوعبيد)"
+      piece = \markup { \huge "خانة 3(Nadhir Bouabid)" }
     }
   }
   \score
@@ -699,7 +697,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "طوق"
+      piece = \markup { \huge "طوق" }
     }
   }
   \score
@@ -708,7 +706,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "سلسلة"
+      piece = \markup { \huge "سلسلة" }
     }
   }
   \score
@@ -717,98 +715,98 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = "الأبيات"
+      piece = \markup { \huge "دخول الأبيات" }
     }
   }
   \score
   {
     \new Staff \dkhoul_btayhi
     \layout { }
-    \header { piece = "دخول بطايحي" }
+    \header { piece = \markup { \huge "دخول بطايحي" } }
   }
   \score
   {
     \new Staff \jitou
     \layout { }
-    \header { piece = "بطايحي جئت بالإحتقار" }
+    \header { piece = \markup { \huge "بطايحي جئت بالإحتقار" } }
   }
   \score
   {
-    \new Staff { r4 r8 \fargha_btayhi \baligh }
+    \new Staff { r4 r8 \mark \markup {"فارغة"} \fargha_btayhi \baligh }
     \layout { }
-    \header { piece = "بطايحي بلغ إلى أهل الديار" }
+    \header { piece = \markup { \huge "بطايحي بلغ إلى أهل الديار " } }
   }
   \score
   {
-    \new Staff { \fargha_btayhi \ya_hibi }
+    \new Staff { \mark \markup {"فارغة"} \fargha_btayhi \ya_hibi }
     \layout { }
-    \header { piece = "بطايحي يا حبي ما لك" }
+    \header { piece = \markup { \huge "بطايحي يا حبي ما لك" } }
   }
   \score
   {
     \new Staff \touchia
     \layout { }
-    \header { piece = "توشية" }
+    \header { piece = \markup { \huge "توشية(رمل الماية)" } }
   }
   \score
   {
     \new Staff \aini_kahila
     \layout { }
-    \header { piece = "عيني كحيلة" }
+    \header { piece = \markup { \huge "عيني كحيلة" } }
   }
   \score
   {
     \new Staff \ya_farhati
     \layout { }
-    \header { piece = "يا فرحتي" }
+    \header { piece = \markup { \huge "يا فرحتي" } }
   }
   \score
   {
     \new Staff \imchi_ya_rasoul
     \layout { }
-    \header { piece = "إمش يا رسول" }
+    \header { piece = \markup { \huge "إمش يا رسول" } }
   }
   \score
   {
     \new Staff \nar_elhawa
     \layout { }
-    \header { piece = "نار الهوى" }
+    \header { piece = \markup { \huge "نار الهوى" } }
   }
   \score
   {
     \new Staff \qalbi_musaikin
     \layout { }
-    \header { piece = "قلبي مسيكن" }
+    \header { piece = \markup { \huge "قلبي مسيكن" } }
   }
   \score
   {
     \new Staff \kharajtou_nachwana
     \layout { }
-    \header { piece = "خرجت نشوانا" }
+    \header { piece = \markup { \huge "خرجت نشوانا" } }
   }
   \score
   {
     \new Staff \arodhni_nahar
     \layout { }
-    \header { piece = "عرضني نهار" }
+    \header { piece = \markup { \huge "عرضني نهار" } }
   }
   \score
   {
-    \new Staff \ya_toura
+    \new Staff \ya_hal_tara
     \layout { }
-    \header { piece = "درج يا هل ترى متى ترجع" }
+    \header { piece = \markup { \huge "دخول الأدراج" } }
   }
   \score
   {
     \new Staff \afnani
     \layout { }
-    \header { piece = "خفيف أفناني الحب يا نديم" }
+    \header { piece = \markup { \huge "دخول الخفائف" } }
   }
   \score
   {
-    \new Staff \alsommou
+    \new Staff \assoummou
     \layout { }
-    \header { piece = "ختم السم من ألسن الأفاعي" }
+    \header { piece = \markup { \huge "ختم السم من ألسن الأفاعي" } }
   }
   \score
   {
@@ -913,9 +911,9 @@ aini_kahila = \relative do''
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
-        \unfoldRepeats \ya_toura
+        \unfoldRepeats \ya_hal_tara
         \unfoldRepeats \afnani
-        \unfoldRepeats \alsommou
+        \unfoldRepeats \assoummou
       }
     >>
     \midi { \tempo 4 = 80 }

@@ -6,7 +6,7 @@
   composer = "Transcription: Brahim SAHBI et Aymen MAJOUL"
   copyright = \markup \center-column {
     \line { مالوف تونس باريس © Mâlouf Tunisien Paris }
-    \line { Direction: Ahmèd-Ridha ABBÈS }
+    \line { Direction : Ahmed-Ridha ABBÈS }
   }
 }
 \paper {
@@ -207,7 +207,7 @@ touchia = \relative do' {
   sol fa mi re do16 sisb do sisb la sol8 la16|
   sol8 do4 mi8 re16 fa8 mi16 sol8 la |
   sol16 fa mi re do8 mi mi16 re do sisb la4 |
-  \break r1_"إستخبار  بالعود العربي" |
+  \break r1_"إستخبار  العود العربي" |
   \break r1_"قصيدة في الرصد العبيدي" |
 }
 ya_hal_tara = \relative do' {
@@ -327,7 +327,7 @@ baligh = \relative do''
   sol8. sol8 mi16 re8 r16 sol |
   \repeat volta 2
   {
-    \mark \markup { \huge "إنشاد"} sol8 la4 sol8 mi re mi16 re sol8 |
+    \mark \markup { \huge "بطايحي بلغ إلى أهل الديار "} sol8 la4 sol8 mi re mi16 re sol8 |
     fa32 sol fa sol mi16 re r8 do8. re8. mi8 re |
     sol8 la4 sol8 sol16 mi8 re16 fa32 mi fa sol fa16 mi |
     mi16. re32 do16 re do8 r8 mi16 mi8. mi8 re8 |
@@ -379,13 +379,13 @@ fargha_btayhi = \relative do'
   \alternative
   {
     { la sol r8 fa'16 mi re do re mi fa4 | }
-    { la,8 sol r8 }
+    { \break la,8 sol r8 }
   }
 }
 ya_hibi = \relative do''
 {
   \key do \major
-  \mark \markup { \huge "إنشاد"} la8. la8. sol8 fa |
+  \mark \markup { \huge "بطايحي يا حبي ما لك"} la8. la8. sol8 fa |
   \repeat volta 5
   {
     \Segno
@@ -735,15 +735,15 @@ aini_kahila = \relative do''
   }
   \score
   {
-    \new Staff { r4 r8 \mark \markup {"فارغة"} \fargha_btayhi \baligh }
+    \new Staff { r4 r8 \fargha_btayhi \baligh }
     \layout { }
-    \header { piece = \markup { \huge "بطايحي بلغ إلى أهل الديار " } }
+    \header { piece = \markup { \huge "فارغة" } }
   }
   \score
   {
-    \new Staff { \mark \markup {"فارغة"} \fargha_btayhi \ya_hibi }
+    \new Staff { \fargha_btayhi \ya_hibi }
     \layout { }
-    \header { piece = \markup { \huge "بطايحي يا حبي ما لك" } }
+    \header { piece = \markup { \huge "فارغة" } }
   }
   \score
   {
@@ -767,7 +767,7 @@ aini_kahila = \relative do''
   {
     \new Staff \imchi_ya_rasoul
     \layout { }
-    \header { piece = \markup { \huge "إمش يا رسول" } }
+    \header { piece = \markup { \huge "امش يا رسول" } }
   }
   \score
   {

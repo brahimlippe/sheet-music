@@ -1,14 +1,16 @@
 \language "italiano"
 \include "arabic.ly"
+#(set-global-staff-size 22)
 \header {
   title = \markup { \huge "نوبة الرصد العبيدي" }
   composer = "Transcription: Brahim SAHBI et Aymen MAJOUL"
-  copyright = "مالوف تونس باريس©Malouf Tunisien Paris"
-  tagline=""
+  copyright = \markup \center-column {
+    \line { مالوف تونس باريس © Mâlouf Tunisien Paris }
+    \line { Direction: Ahmèd-Ridha ABBÈS }
+  }
 }
-#(set-global-staff-size 22)
 \paper {
-  bottom-margin = 20
+  bottom-margin = 15
 }
 DCcoda = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
@@ -65,6 +67,7 @@ khana_one = \relative do''
   \time 6/4
   \repeat volta 2
   {
+    \mark \markup { \huge "Khâna 1 خانة"}
     sol8 fa16 mi re do re mi fa8. sol16 fa8 sol mi16 fa mi fa re4 |
     r8 sol16 sol sol8 la sol16 la8 sol16 mi8 re do16 re do mi re4 |
     do16 re8 do16 la8 sol do4 re mib8 re16 do re4 |

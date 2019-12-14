@@ -2,7 +2,7 @@
 \include "arabic.ly"
 #(set-global-staff-size 22)
 \header {
-  title = \markup { \huge "نوبة الرصد العبيدي" }
+  title = \markup { \magnify #2.5 "نوبة الرصد العبيدي" }
   composer = "Transcription: Brahim SAHBI et Aymen MAJOUL"
   copyright = \markup \center-column {
     \line { مالوف تونس باريس © Mâlouf Tunisien Paris }
@@ -11,6 +11,14 @@
 }
 \paper {
   bottom-margin = 15
+  indent = 0
+  oddFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
+  evenFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
+  #(define fonts
+  (make-pango-font-tree "Times New Roman"
+                        "Nimbus Sans"
+                        "Luxi Mono"
+                        (/ staff-height pt 20)))
 }
 DCcoda = {
   \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)

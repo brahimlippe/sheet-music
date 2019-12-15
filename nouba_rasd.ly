@@ -216,7 +216,7 @@ touchia = \relative do' {
   sol8 do4 mi8 re16 fa8 mi16 sol8 la |
   sol16 fa mi re do8 mi mi16 re do sisb la4 |
   \break r1_"إستخبار  العود العربي" |
-  \break r1_"قصيدة في الرصد العبيدي" |
+  \break r1_"قصيدة في الرصد العبيدي : \"قدم المساء يا مرحبا بقدومه     وهذا النهار قد انقضى في سبيله\"" |
 }
 ya_hal_tara = \relative do' {
   \key do \major

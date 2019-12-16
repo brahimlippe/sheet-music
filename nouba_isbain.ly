@@ -179,7 +179,116 @@ silsla = \relative do''
   \time 3/8
   re8 re re |
   do \( do16 (sisb do re)\) |
+  sisb8 \( sisb16 ( la sisb do)\) |
+  la8 \( la16 (sol la sisb)\) |
+  do8 \( do16 (sisb do re)\) |
+  sisb8 \( sisb16 (la sisb do)\) |
+  la8 \( la16 (sol la sisb)\) |
+  sol8 \( sol16 (fad sol la)\) |
+  sib8 \( sib16 (la sib do)\) |
+  la8 \( la16 (sol la sib)\) |
+  sol8 \( sol16 (fad sol la)\) |
+  fad8 \( fad16 (mib fad sol)\) |
+  la8 \( la16 (sol la sib)\) |
+  sol8 \( sol16 (fad sol la)\) |
+  fad8 \( fad16 (mib fad sol)\) |
+  mib8 \( mib16 (re mib fad)\) |
+  sol8 \( sol16 (fad sol la)\) |
+  fad8 \( fad16 (mib fad sol)\) |
+  mib8 \( mib16 (re mib fad)\) |
+  re8 r4 |
 }
+abyat = \relative do'
+{
+  \time 2/4
+  \repeat volta 2
+  {
+    re8 re sol16 (fad) sol8 |
+    la4 la |
+    la16 (do) sisb (do) la8 sol |
+    fad8 sol16 (la) sol8 la( |
+    la) re, fad sol |
+    la sisb do16 (re) sisb (do) |
+    la (sib) sol (la) fad (mib) fa (sol) |
+    la (sol) fad (mib) re4 |
+  }
+  la8 sol4 la8 |
+  sol8. (fad16) la8. (sol16) |
+  sib16 (la) sol (fad) fad (mib) fad (sol) |
+  la (sol) fad (mib) re4 |
+  r8 la4 (sol8) |
+  sib16 (la) sol (fad) sol4 |
+  do8. do16 re (mib) fad (sol) |
+  la16 sib8 (la16) sol4 |
+  la16 (sol) sol (fad) fad (mib) fad (sol) la16 sib8 (la16) sol4 |
+  sol4 fad8 sol8( |
+  sol8) fad la4 |
+  sol8. (la16) sol16 (la) sol8 |
+  fad8 mib mib8. (re16) |
+  \break
+  \time 4/4
+  do8 do4 do re8 mib re |
+  la sol (sol) fad re16 mib8 (fad16) re8 r |
+  re'2 do8 (sisb) do r |
+  re8 re16 re re8 re mi (re) do4 |
+  la16 (sisb do) la (sisb do) la (sisb) do (re) sisb re do4 |
+  r8 do4 do8 sisb16 re8. (re4)( |
+  re4.) r8 re16 re8 (dod16) re8. (dod16) |
+  \break \mark \markup { \huge "ﺍﻸﺒﻳﺎﺗ"} re mi re dod re8 r r16 re16 re re fa8 (mi) |
+  re dod sib la (la16) sib8 la16 do re do sib |
+  la4 r8 re,8 (re16) re8 (mib16) fad16 (sol fad mib) |
+  re4 r8 la (la16) la8 (sib16) la16 sol fad mib |
+  re16. do32 do8 r16 la'16 la8 la16 la8 (sol16) sib16 la sol fad |
+  sol r do8 (do) sisb do sisb do4 |
+  la8 sib16 do la sib sol la fad sol fad mib re4 |
+    \repeat volta 2
+  {
+    \break \mark \markup { \huge "فارغة"} la8 sib16 (do) la (sib) sol (la) fad (sol fad mib) re4 |
+    sol8 sol16 (la) fad8 re mib16 (re mib fad) sol4 |
+    la8 sib16 (do) la (sib) sol (la) fad (sol fad mib) re4 |
+    do16 re do8 (do16) re mib8 re16 fad8 mib16 re4 |
+  }
+  \break \mark \markup { \huge "ﺈﻨﺷﺍﺩ"} re4. re8 (re16) sol fad sol la4 |
+  la16 do sisb do la8 r r16 sol sol32 fa sol16 la (sisb do re) |
+  re16 do do sisb sisb la la8 sol16 do8 sisb16 sisb32 la sisb do sisb16 la |
+  la32 sol la sisb la16 sol r8 sol (sol16) sol fad sol la8 sib |
+  la32 sol fad mib re r la8 (la16) la8 sib16 la sol fad mib |
+  re16. (do32) do8 r16 la la8 la16 la8 sol16 sib16 la sol fad |
+  sol r sol8 (sol) fad sol fad sol fad16 sol |
+  la8 sol fad mib fad16 sol32 la fad16 mib re4 |
+  \repeat volta 2
+  {
+    \break \mark \markup { \huge "فارغة"} re8 re16 re mib8 mib16 mib fad8 fad16 fad sol8 sol16 sol |
+    la8 la16 la sisb do sisb la sisb8 do re r |
+    re16 sisb8 (sisb16) do (re do) r do la8 (la16) sisb (do sisb) r|
+    sisb sol8 (sol16) la16 sib la r la sol8 (fad) sol16 la sol r |
+    do, re do8 \((do16) re\) mib8 re16 fad8 (mib16) re8 r |
+  }
+  \mark \markup { \huge "إنشاد"} re2 re'16 re8 re16 re (mi) do (re) |
+  sisb (do) la (sisb) sol8 r r16 sol sol32 fa sol16 la (sisb do re) |
+  re (do) do (sisb) sisb (la) la8 sol16 do8 sisb16 sisb32 la sisb do sisb16 la |
+  la32 sol la sib la16 sol r8 re8 sol16 fad sol8 la sib |
+  la16 sol fad mib re do sol'8 sol16 fad sol8 la sib |
+  la sol r sol sol16 fad sol8 la sisb |
+  do sib la sol fad16 (sol fad mib) re4 |
+}
+dkhoul_btayhi = \relative do''
+{
+  \key do \major
+  \time 2/4
+  \repeat volta 2
+  {
+    r8 re4 (re8) |
+    dod16 (re) do (sib) la4( |
+    la8) la sib (dod) |
+    re4. (mi8) |
+    sol (fa) mi (re) |
+    dod (re) dod (sib) la4 |
+  }
+  \time 4/4
+  r8 sisb sisb sisb (sisb16) do8 (la16)  sisb16. (la32 sol8) |
+}
+
 touchia = \relative do' {
   \time 2/4
   r2 |
@@ -218,19 +327,6 @@ fargha_btayhi = \relative do'
 {
   \time 4/4
   r1 |
-}
-abyat = \relative do''
-{
-  \key do \major
-  \time 2/4
-  r2 |
-  \time 4/4
-  r1 |
-}
-dkhoul_btayhi = \relative do''
-{
-  \time 2/4
-  r2 |
 }
 barwel_one = \relative do''
 {

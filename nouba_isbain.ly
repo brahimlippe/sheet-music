@@ -62,342 +62,192 @@ btayhi = \drummode {
 }
 istiftah = \relative do'
 {
-  r1 |
+  \time 2/4
+  re2 ( |
+  re4.) mib8 |
+  do4. (re8) |
+  mib4. (re8) |
+  fad (mib) re (do) |
+  re2( |
+  re4) r |
+  sol4. la8 |
+  sol (fad) sol (la) |
+  sib4. la8 |
+  la (sol) sol (fad) |
+  fad (mib) mib (re) |
+  do4 la' |
+  sol fad8. (la16) |
+  sol2 (|
+  sol8) r8 r4 |
+  do8 sisb (sisb) do |
+  la (sisb) sol r |
+  re'8. (dod16) re16 (dod re mi) |
+  fa4. mi8 |
+  mi (re) re(dod) |
+  dod (sib) sib (la) |
+  sol8. re'16 dod (sib) sib (la) |
+  la4. r8 |
+  do8. (re16) sisb8. (do16) |
+  la8. (sisb16) sol8. (la16) |
+  sib2( |
+  sib8) r la (sol) |
+  fad2( |
+  fad4) r8 re |
+  mib4. sol8 |
+  fad (mib) mib (re) |
+  re2( |
+  re8) r sol (mi) |
   \break
 }
 khana_one = \relative do''
 {
   \time 6/4
-  \repeat volta 2
-  {
-    \mark \markup { \huge "Khâna 1 خانة"}
-    r1 |
-  }
+  fad,4 sol la2 (la8) r la16 (do) sisb (do) |
+  la8 r la16 (do) sisb (do) la sisb8 (la16) sol8 r re'4 do8 (sisb) |
+  la16 (sib) la8 sol (fad) la sol4 fad8 mib16 (sol) sol (fad) fad (mib) mib (re) |
+  do4 fad16 (mib re do) re2 re8 r8 sol mi |
+  fad4 sol la sol8 sib la2 |
+  re,2 re8 r sol mi fad4 sol |
+  la2 (la8) r la16 (do) sisb (do) la8 r la16 (do) sisb (do) |
+  la sisb8 (la16) sol8 r re'4 do8 (sisb) la16 (sib) la8 sol (fad) |
+  la (sol) fad (mib) la (sol) fad(mib) re4 r |
 }
-taslim = \relative do''
-{
-  \time 6/4
-  \repeat volta 2
-  {
-    r1 |
-  }
-}
-khana_two = \relative do'
-{
-  \time 6/4
-  \repeat volta 2
-  {
-    r1 |
-  }
-}
-khana_three = \relative do'
-{
-  \time 6/4
-  \repeat volta 2
-  {
-    r1 |
-  }
-}
-touq = \relative do'
+taslim = \relative do'
 {
   \time 6/4
   r1 r2 |
-  \time 3/4
-  r4 r4 r4 |
+}
+khana_two = \relative do''
+{
+  \time 6/4
+  re8 re16 re re8 re re4 re mi8 (fa) mi (re) |
+  fa (mi) dod (sib) mi (re) dod (sib) la4. r8 |
+  re re16 re re8 re re16 (do re mi) do (sisb do re) sisb (la sisb do) la (sol la sisb) |
+  sol4. r8 do4 la sisb (do) |
+  re2 (re8) r r4 re8 re16 re re8 re |
+  re4 re mi8 (fa) mi (re) mi (re) dod (sib) |
+  mi (re) dod (sib) la4. r8 sisb4. (sisb8) |
+  re16 do8 (la16) sol8 r la sib la (sol) la (sol) fad (mib) |
+  la (sol) fad (mib) re2. r4 |
+}
+khana_three = \relative do''
+{
+  \time 6/4
+  mi4 re8 do16 (sisb) la sisb8 (la16) sol8 r re'16 (fa) mi (fa) re8 do16 (sisb) |
+  la16 sisb8 (la16) sol8 r re'16 (fa) mi (fa) re8 do16 (sisb) la16 sisb8 (la16) sol8 r |
+  la4 sisb do sisb8 (re) do4. r8 |
+  re8 do4 sisb8 do16 (re do sisb) la8 r sisb8. (re16) do8. la16 |
+  sol4. r8 la4 sib4 dod8 (sib) do mi |
+  re4. r8 mi16 (re) re (dod) dod (sib) sib (la) la4. r8 |
+  mi'4 re8 do16 (sisb) la sisb8 (la16) sol8 r re'16 (fa) mi (fa) re8 do16 (sisb) |
+  la sisb8 (la16) sol8 r re'16 (fa) mi (fa) re8 do16 (sisb) la sisb8 (la16) sol8 r |
+  do16 sisb8 (do16) la (sib) sol (la) fad (sol) mib (fad) re (mib) do8 re4 r |
+}
+khana_four = \relative do''
+{
+  \time 6/4
+  re4. re8 re4 la16 (sisb) do8 re4 r4 |
+  mi4.\( re16( mi ) \) re4 do8 sisb re8 do4 sisb8 |
+  re8 re16 re re8 mi re16 (do) sisb (la) sol8 la sisb4 r |
+  do8 (re) do (sisb) la4 sol16 (fad) sol8 la4 r |
+  sisb8 (do) sisb (do) la4 sol8 (fad) la8 sol4 (fad8) |
+  la8 (sol) fad (mib) la (sol) fad (mib) re4 r |
+  la'16 (sol) sol (fad) fad (mib) mib (re) re4 mib16 (fad) sol (la) sol4 r |
+  sisb8 (do) sisb (do) la4 sol8 (fad) la sol4 (fad8) |
+  la (sol) fad (mib) la (sol) fad (mib) re4. r8 |
+}
+touq = \relative do''
+{
+  \time 6/8
+  sol8 fad sol la sisb16 do sisb la |
+  sisb8 la sisb do re r |
+  re do re re mi16 fa mi re |
+  do8 sisb do do re16 mi re do |
+  sisb8 la sisb sisb do16 re do sisb |
+  la8 sol la sisb do r |
+  do sisb do do re16 mi re do |
+  sisb8 la sisb sisb do16 re do sisb |
+  la8 sol la la sib16 do sib la |
+  sol8 fad sol la sib r |
+  sib la sib sib do16 re do sib |
+  la8 sol la la sib16 do sib la |
+  sol8 fad sol sol la16 sib la sol |
+  fad8 re mib fad re r |
 }
 silsla = \relative do''
 {
   \time 3/8
-  r4 r r |
+  re8 re re |
+  do \( do16 (sisb do re)\) |
 }
 touchia = \relative do' {
   \time 2/4
-  \repeat volta 2
-  {
-    r2 |
-  }
-  \alternative
-  {
-    { r1_"إستخبار الرباب" | }
-    { \time 4/4 r1 | }
-  }
+  r2 |
+  r2_"إستخبار الرباب" |
+  \time 4/4 r1 |
   \break r1_"إستخبار  العود العربي" |
-  \break r1_"قصيدة في رست الذيل : \"قدم المساء يا مرحبا بقدومه     وهذا النهار قد انقضى في سبيله\"" |
+  \break r1 \mark \markup \center-column {
+    \line { قصيدة في رست الذيل : حلفت يمينا لا أحب سواكم   ولا شاقني إلا نسيم هواكم }
+    \line { سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم }
+  } |
 }
 draj_one = \relative do' {
   \time 6/4
-  \repeat volta 2
-  {
-    r1 r2 |
-  }
+  r1 r2 |
 }
 khafif_one = \relative do'' {
   \time 6/4
-  \repeat volta 2
-  {
-    r1 r2 |
-  }
+  r1 r2 |
 }
 khatem_one = \relative do' {
   \time 6/8
-  \repeat volta 2
-  {
-    r2 r4 |
-  }
+  r2 r4 |
 }
 btayhi_one = \relative do''
 {
   \time 4/4
   r1 |
 }
+btayhi_two = \relative do''
+{
+  \time 4/4
+  r1 |
+}
+
 fargha_btayhi = \relative do'
 {
-  r1 |
-}
-ya_hibi = \relative do''
-{
-  \mark \markup { \huge "بطايحي يا حبي ما لك"} la8. la8. sol8 fa |
   \time 4/4
   r1 |
-}
-jitou = \relative do'
-{
-  \key do \major
-  \time 4/4
-  la8 sol r8 re'8 mi16 fa sol mi fa4 |
-  \Segno do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
-  r8 mi4 re8 re do re mi |
-  do re4 (mi8) fa16 (sol fa mi) fa4 |
-  r8 sol4 (fa8) sol32 (la sol16 fa mi) fa4 |
-  r4 r8 re mi16 fa sol mi fa4 |
-  do8 sol'4 (fa8) sol32 (la sol16 fa mi) fa4 |
-  r8 mi4 re8 re do re mi |
-  do re4 (mi8) fa16 sol fa mi fa4 |
-  r8 sol4 (fa8) sol32 (la sol16 fa mi) fa4~ |
-  fa4 r8 sol8. sol8. sol4 |
-  r8 sol4 la8 sol mi re4 |
-  r4 r8 do' (sisb16) la8 (sol16) sol4 |
-  r8 sol4 la8 sol mi re4 |
-  r8 sol4 la8 sol4 sol16 (la sol la) |
-  sol8 fa4 sol8 la4 do16 (sib la sol |
-  fa4) r8 la (sol16) mi8 (re16) re4 |
-  do8 re4 (do8) re do la sol \coda |
-  r8 r4 do'8 (sisb16) la8 (sol16) sol4 |
-  \repeat volta 3
-  {
-    r8 sol4 la8 sol mi re4 |
-    r8 sol4 la8 sol4 sol16 (la sol la) |
-    sol8 fa4 sol8 la4 do16 (sib la sol |
-    fa4) r8 la8 (sol16) mi8 (re16) re4 |
-    do8 re4 do8 fa16 mi fa sol la sol fa mi |
-  }
-  \alternative
-  {
-    { re4 r8 do' (sisb16) la8 (sol16) sol4 |}
-    { re4 r8 re8 mi16 fa sol mi fa4 | }
-  }
-  \DScoda
 }
 abyat = \relative do''
 {
   \key do \major
   \time 2/4
-  \repeat volta 2
-  {
-    sol8 sol16 sol sol8 la |
-    sol16 la8 sol16 mi8 re |
-    r8 do'16 sisb sisb do la8 |
-    sol16 la8 sol16 mi8 re |
-    r8 re16 re re8 mi |
-    re16 sol fa sol la4 |
-    r8 la16 sol mi8 re |
-  }
-  \alternative
-  {
-    { do mi re4}
-    { do8 mi re do}
-  }
-  re16 do8 la16 sol4 |
+  r2 |
   \time 4/4
-  r8 sol'16 sol sol8 do,8. re8 mi16 fa8. sol16 |
-  \repeat volta 2
-  {
-    mi16 fa mi fa re8 mi re16 sol fa sol la4 |
-    r8 la16 sol mi8 re do mi re do |
-  }
-  \alternative
-  {
-    { la sol4 sol'8 do,16 re8 mi16 fa8. sol16 |}
-    { \break \mark \markup { \huge "الأبيات"} la,8 sol4. r16 do re mi fa sol fa sol | }
-  }
-  mi16 fa mi fa re4 r16 sol16 sol sol sol4 |
-  sol8 la4 la8 sol16 la8 sol16 mi8 re |
-  sol16( \grace la) fa( \grace sol) mi( \grace fa) re( \grace mi) do4\turn r16 do re mi fa8.\turn sol16 |
-  mi16 fa mi fa re8 sol8. sol8 sol16 sol4 |
-  sol16 fa mi re do8 la' la16 sol8. fa8 mi |
-  fa16. mi32 fa16 sol fa8 sol mi re mi re |
-  r8 sol16 sol la8 sol la sol mi re |
-  r8 do16 re mi8 re do16 re8 do16 la8 sol |
-  \repeat volta 2
-  {
-    \break \mark \markup { \huge "فارغة"} r8 sol'16 sol sol8 la sol16 la sol la sisb4 |
-    r8 la16 la la8 la sol16 la8 sol16 mi8 re |
-    r8 re16 re re8 mi re16 sol fa sol la4 |
-  }
-  \alternative
-  {
-    { r8 la16 sol mi8 re do mi re4 }
-    { r8 la'16 sol mi8 re do mi re do }
-  }
-  \break la sol4 \mark \markup { \huge "إنشاد"} do'8 sisb16 sisb8 la16 la32 sol la sisb la16 sol |
-  sol4 r8 sol8 re16 sol8 la16 la do sisb8 |
-  \grace {do16 (si } la4.) la8 sol16 la8 sol16 mi8 re |
-  sol16 fa mi re do4\turn r16 do16 re mi fa8. sol16 |
-  mi fa mi fa re8 la' sol16 sol8 sol16 sol8 sib16 la |
-  sol16 fa mi re do8 la' la16 sol8. fa8 mi |
-  fa16. mi32 fa16 sol fa8 sol mi re mi re |
-  r8 sol16 sol la8 sol la sol mi re |
-  r8 do16 re mi8 re mi do re32 do re mi re16 do |
-  la8 sol r sol'8. sol8 sol16 sol mi re8~ |
-  \repeat volta 2
-  {
-    \break \mark \markup { \huge "فارغة"} re re16 re re8 mi re16 sol fa sol la4 |
-    r8 la16 sol mi8 re do mi re do |
-  }
-  \alternative
-  {
-    { la sol4 sol'8. sol8 sol16 sol mi re8 }
-    { \mark \markup { \huge "إنشاد"} la sol4 sol'16 do sisb16 sisb8 sisb16 la8. sol16 }
-  }
-  sol32 fad sol la sol16 mi re8 r16 sol sol sol8 la16 la do sisb8 |
-  sisb32 do sisb do la4 la8 sol16 la8 sol16 mi8 re |
-  sol16 fa mi re do8 do16 do8 re mi16 fa8 fa16 sol |
-  mi16 fa mi fa re8 la' la16 sol8 sol16 fa8 mi |
-  fa16. mi32 fa16 sol fa8 sol mi re mi re |
-  r8 sol16 sol la8 sol la sol mi re |
-  r8 do16 re mi8 re mi do32 re do mi re4 |
+  r1 |
 }
 dkhoul_btayhi = \relative do''
 {
-  \key do \major
   \time 2/4
-  \repeat volta 2
-  {
-    sol8 sol16 sol sol8 la |
-    sol16 la8 sol16 mi8 re |
-    r8 re16 re re8 mi |
-    re16 sol fa sol la4 |
-    r8 la16 sol mi8 re |
-    do mi re do |
-    la sol r8 do' |
-    sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
-    \grace { do16 (sisb } la8) la16 la la8 sol |
-    sib la fad16 sol fad mib |
-    re8 re16 re8. re8 |
-    re16 mi8 re16 sol4 |
-  }
+  r2 |
+}
+barwel_one = \relative do''
+{
+  \time 2/4
+  r2 |
+}
+dkhoul_brawel_one = \relative do''
+{
   \time 4/4
-  r8 la16 sol mi8 re do mi re do |
-}
-imchi_ya_rasoul = \relative do'
-{
-  \key do \major
-  \time 2/4
-  \repeat volta 5
-  {
-    re16 re8 re16 re8 mi( |
-    mi) re16 mi16 ~ mi re sol8 |
-    la16 la8 la16 ~ la16 sol sol8( |
-    sol) fad16 sol ~ sol mi \coda re8 |
-  }
-  \repeat volta 2
-  {
-    do16 do8 do16 ~ do re mib8(|
-    mib8 ) re16 mib ~ mib do re8 |
-    la'16 la8 la16 ~ la sol sol8 |
-    sol fad16 sol ~ sol mi re8 |
-    \DCcoda
-  }
-}
-kharajtou_nachwana = \relative do''
-{
-  % TODO A verifier
-  \time 2/4
-  \repeat volta 5
-  {
-    do16 do8 do16 si8 si16 do |
-    la8 la16 la la8 la |
-    sol16 sol8 mi16 re4 |
-    sol16 sol sol8 sol16 sol sol8 |
-    sol16 sol8 fa8 sol16 la8 |
-  }
-  mi16 mi8 mi16 mi8 re16(do) |
-  r mi8 mi16 mi8 re16(do) |
-  mi4 re |
-  mi16 mi8 mi16 mi8 re16(do) |
-  r mi8 mi16 mi8 re16(do) |
-  mi4 re8 do |
-  mi4 re |
-}
-nar_elhawa = \imchi_ya_rasoul
-qalbi_musaikin = \kharajtou_nachwana
-arodhni_nahar = \imchi_ya_rasoul
-ya_farhati = \relative do''
-{
-  \key do \major
-  \time 2/4
-  \repeat volta 5
-  {
-    r16 do (sisb) do (sisb) do la8~ |
-    la16 la8 la16 la8 sol8( |
-    fad16 ) sol8 (mi16) re4 |
-    sol16 sol sol sol sol sol sol8 |
-    sol16 sol8 fa8 sol16 la8 \coda |
-  }
-  % TODO A verfier
-  mi16 mi8 mi16 mi8 re16(do) |
-  r mi8 mi16 mi8 re16(do) |
-  mi4 re |
-  mi16 mi8 mi16 mi8 re16(do) |
-  r mi8 mi16 mi8 re16(do) |
-  mi4 re8 do |
-  mi4 re8 do |
-  mi4 re8 do |
-  mi4 re |
-  \DCcoda
-}
-aini_kahila = \relative do''
-{
-  \key do \major
-  \repeat volta 5
-  {
-    r8 sol4 sol8 (sol) sol sol mi |
-    re4 r8 sol16 sol sol8 sol sol4 |
-    sol8 sol (sol) fa (fa) sol la4 |
-    r8 la4 la sol8 sol fa |
-    sol la4 sol8 sol mi re4 |
-    r8 re re re (re) re mi4 |
-    re8 sol4 la8 (la) sol sol fa |
-    sol la4 sol8 sol mi re4 \coda |
-  }
-  r8 do'4 re8 (re) do la4 |
-  r8 sol4 la8 (la) sol mi4 |
-  r8 do (do) do4 re8 mib re |
-  la' sol fad re mib16 re mib fad re4|
-  \DCcoda
+  r1 |
 }
 \book
 {
   \score
   {
     \new Staff \istiftah
-    \layout
-    {
-      \context
-      {
-        \Score defaultBarType = ""
-      }
-    }
+    \layout { }
     \header
     {
       piece = \markup { \huge "إستفتاح" }
@@ -427,7 +277,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = \markup { \huge "خانة 2 (Nabil Ghanouchi)" }
+      piece = \markup { \huge "خانة 2" }
     }
   }
   \score
@@ -436,7 +286,16 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = \markup { \huge "خانة 3(Nadhir Bouabid)" }
+      piece = \markup { \huge "خانة 3" }
+    }
+  }
+  \score
+  {
+    \new Staff \khana_four
+    \layout { }
+    \header
+    {
+      piece = \markup { \huge "خانة 4" }
     }
   }
   \score
@@ -488,49 +347,19 @@ aini_kahila = \relative do''
   {
     \new Staff \touchia
     \layout { }
-    \header { piece = \markup { \huge "توشية(رمل الماية)" } }
+    \header { piece = \markup { \huge "توشية(رست الذيل)" } }
   }
   \score
   {
-    \new Staff \aini_kahila
+    \new Staff \dkhoul_brawel_one
     \layout { }
-    \header { piece = \markup { \huge "عيني كحيلة" } }
+    \header { piece = \markup { \huge "دخول براول" } }
   }
   \score
   {
-    \new Staff \ya_farhati
+    \new Staff \barwel_one
     \layout { }
-    \header { piece = \markup { \huge "يا فرحتي" } }
-  }
-  \score
-  {
-    \new Staff \imchi_ya_rasoul
-    \layout { }
-    \header { piece = \markup { \huge "امش يا رسول" } }
-  }
-  \score
-  {
-    \new Staff \nar_elhawa
-    \layout { }
-    \header { piece = \markup { \huge "نار الهوى" } }
-  }
-  \score
-  {
-    \new Staff \qalbi_musaikin
-    \layout { }
-    \header { piece = \markup { \huge "قلبي مسيكن" } }
-  }
-  \score
-  {
-    \new Staff \kharajtou_nachwana
-    \layout { }
-    \header { piece = \markup { \huge "خرجت نشوانا" } }
-  }
-  \score
-  {
-    \new Staff \arodhni_nahar
-    \layout { }
-    \header { piece = \markup { \huge "عرضني نهار" } }
+    \header { piece = \markup { \huge "براول" } }
   }
   \score
   {
@@ -560,6 +389,8 @@ aini_kahila = \relative do''
       \unfoldRepeats \khana_two
       \unfoldRepeats \taslim
       \unfoldRepeats \khana_three
+      \unfoldRepeats \taslim
+      \unfoldRepeats \khana_four
       \unfoldRepeats \touq
       \unfoldRepeats \silsla
     }
@@ -579,8 +410,8 @@ aini_kahila = \relative do''
     <<
       \new Staff \new DrumStaff
       {
-        \unfoldRepeats \repeat volta 24 \hroub
-        \unfoldRepeats \repeat volta 134 \btayhi
+        \unfoldRepeats \repeat volta 1 \hroub
+        \unfoldRepeats \repeat volta 1 \btayhi
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
@@ -599,8 +430,8 @@ aini_kahila = \relative do''
     <<
       \new Staff \new DrumStaff
       {
-        \unfoldRepeats \repeat volta 42 \hroub
-        \unfoldRepeats \repeat volta 28 \btayhi
+        \unfoldRepeats \repeat volta 2 \hroub
+        \unfoldRepeats \repeat volta 2 \btayhi
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
@@ -613,8 +444,8 @@ aini_kahila = \relative do''
   {
     \new StaffGroup
     <<
-      \new Staff \new DrumStaff \unfoldRepeats \repeat volta 44 \dkhoul_barwel_s
-      \new Staff \with {midiInstrument = #"violin"} \unfoldRepeats \aini_kahila
+      \new Staff \new DrumStaff \unfoldRepeats \repeat volta 1 \dkhoul_barwel_s
+      \new Staff \with {midiInstrument = #"violin"} \unfoldRepeats \dkhoul_brawel_one
     >>
     \midi { \tempo 4 = 110 }
   }
@@ -624,16 +455,11 @@ aini_kahila = \relative do''
     <<
       \new Staff \new DrumStaff
       {
-        \unfoldRepeats \repeat volta 100 \hroub
+        \unfoldRepeats \repeat volta 1 \hroub
       }
       \new Staff \with {midiInstrument = #"violin"}
       {
-        \unfoldRepeats \ya_farhati
-        \unfoldRepeats \imchi_ya_rasoul
-        \unfoldRepeats \kharajtou_nachwana
-        \unfoldRepeats \nar_elhawa
-        \unfoldRepeats \qalbi_musaikin
-        \unfoldRepeats \arodhni_nahar
+        \unfoldRepeats \barwel_one
       }
     >>
     \midi { \tempo 4 = 60 }
@@ -644,10 +470,10 @@ aini_kahila = \relative do''
     <<
       \new Staff \new DrumStaff
       {
-        \unfoldRepeats \repeat volta 48 \draj
-        \unfoldRepeats \repeat volta 24 \khatem
-        \unfoldRepeats \repeat volta 60 \khafif
-        \unfoldRepeats \repeat volta 110 \khatem
+        \unfoldRepeats \repeat volta 1 \draj
+        \unfoldRepeats \repeat volta 1 \khatem
+        \unfoldRepeats \repeat volta 1 \khafif
+        \unfoldRepeats \repeat volta 1 \khatem
       }
       \new Staff \with {midiInstrument = #"violin"}
       {

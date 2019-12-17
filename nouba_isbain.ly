@@ -366,12 +366,12 @@ touchia = \relative do' {
     do8 sol'16 sol sol8 sol sol16 sol fa (sol) la4 |
     la16 (sol) sol (fa) fa (misb) misb8 re16 (re) do (re) misb (fa) misb (re) |
     do8 re16 (misb) fa (misb) fa8 do16 fa8 (fa16) la16 (sol) sol8 |
-    fa16 (misb) misb (re) re (do) do8 sol8. (fad16) misb16. (re32 do8) |
+    fa16 (misb) misb (re) re (do) do8 sol'8. (fad16) misb16. (re32 do8) |
   }
   \break r1_"إستخبار  العود العربي" |
   \break r1 \mark \markup \center-column {
     \line { قصيدة في رست الذيل : حلفت يمينا لا أحب سواكم   ولا شاقني إلا نسيم هواكم }
-    \line { سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم }
+    \line { سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم  }
   } |
 }
 draj_one = \relative do'' {

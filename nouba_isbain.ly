@@ -70,7 +70,7 @@ istiftah = \relative do'
   fad (mib) re (do) |
   re2( |
   re4) r |
-  sol4. la8 |
+  \break sol4. la8 |
   sol (fad) sol (la) |
   sib4. la8 |
   la (sol) sol (fad) |
@@ -79,7 +79,7 @@ istiftah = \relative do'
   sol fad8. (la16) |
   sol2 (|
   sol8) r8 r4 |
-  do8 sisb (sisb) do |
+  \break do8 sisb (sisb) do |
   la (sisb) sol r |
   re'8. (dod16) re16 (dod re mi) |
   fa4. mi8 |
@@ -96,13 +96,13 @@ istiftah = \relative do'
   mib4. sol8 |
   fad (mib) mib (re) |
   re2( |
-  re8) r sol (mi) |
+  re8) r
   \break
 }
 khana_one = \relative do''
 {
   \time 6/4
-  fad,4 sol la2 (la8) r la16 (do) sisb (do) |
+  \partial 4 sol (mi) | fad4 sol la2 (la8) r la16 (do) sisb (do) |
   la8 r la16 (do) sisb (do) la sisb8 (la16) sol8 r re'4 do8 (sisb) |
   la16 (sib) la8 sol (fad) la sol4 fad8 mib16 (sol) sol (fad) fad (mib) mib (re) |
   do4 fad16 (mib re do) re2 re8 r8 sol mi |
@@ -369,10 +369,7 @@ touchia = \relative do' {
     fa16 (misb) misb (re) re (do) do8 sol'8. (fad16) misb16. (re32 do8) |
   }
   \break r1_"إستخبار  العود العربي" |
-  \break r1 \mark \markup \center-column {
-    \line { قصيدة في رست الذيل : حلفت يمينا لا أحب سواكم   ولا شاقني إلا نسيم هواكم }
-    \line { سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم  }
-  } |
+  \break r1_"قصيدة في رست الذيل : حلفت يمينا لا أحب سواكم   ولا شاقني إلا نسيم هواكم "_"سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم " |
 }
 draj_one = \relative do'' {
   \time 6/4

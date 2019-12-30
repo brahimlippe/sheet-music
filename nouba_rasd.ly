@@ -122,6 +122,17 @@ khana_three = \relative do'
     fad8 sol16 do sisb do la8 sib16 sol8 la16 fad sol mib re sol32 la sol la fad16 mib mib32 fad mib fad re16 do |
   }
 }
+khana_four = \relative do''
+{
+  \time 6/4
+  \repeat volta 2
+  {
+    r16 sol la sisb do8 re16 sisb la sol do8 sisb la16 sol la8 sol16 fa sol4 |
+    r16 sol32 sol sib16 la sib8 do16 la sol fa do'16. la32 sib16. sol32 la16. fa32 sol8 fa16 mi \grace re8 mi4 |
+    r16 la32 la la16 la la8 sol16 fa sol8 la16 fa mi re la'8 sol mi16 re mi8 re16 do |
+    do16 sol la si do re mi fasd sol8 fa16 mi re8 la' sol mi16 re mi16. re32 do8 |
+  }
+}
 touq = \relative do'
 {
   \time 6/4
@@ -704,6 +715,15 @@ aini_kahila = \relative do''
   }
   \score
   {
+    \new Staff \khana_four
+    \layout { }
+    \header
+    {
+      piece = \markup { \huge "خانة 4(Salem Bnouni)" }
+    }
+  }
+  \score
+  {
     \new Staff \touq
     \layout { }
     \header
@@ -829,6 +849,7 @@ aini_kahila = \relative do''
       \unfoldRepeats \khana_two
       \unfoldRepeats \taslim
       \unfoldRepeats \khana_three
+      \unfoldRepeats \khana_four
       \unfoldRepeats \touq
       \unfoldRepeats \silsla
     }

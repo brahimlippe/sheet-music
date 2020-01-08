@@ -101,9 +101,9 @@ khana_two = \relative do'
   \repeat volta 2
   {
     r8 fad4 sol8 r16 la8 sib16 la sol fad sol fad mib re do re4 |
-    r8 fad4 sol8 r16 la sisb do sol16. la32 sol8 la4. sol8 |
-    r16 mi8 re16 mi8 \grace sol8 (fa16) mi do8 do16 re mi16. re32 mi16 fa sol4 r16 la sib do |
-    re8 do la sol r16 re8 mib16 fad8 la sol mib re do |
+    r8 fad4 sol8 r16 la sisb do sisb16. la32 sol8 la4. sol8 |
+    r16 mi8 re16 mi8 \grace sol8 (fa16) re do8 do16 re mi16. re32 mi16 fa sol4 r16 la sib do |
+    re8 do la sol r16 re8 mi16 fa8 la sol mi re do |
   }
   \alternative
   {
@@ -631,7 +631,7 @@ ya_farhati = \relative do''
   % TODO A verfier
   mi16 mi8 mi16 mi8 re16(do) |
   r mi8 mi16 mi8 re16(do) |
-  mi4 re |
+  mi4 re8 do |
   mi16 mi8 mi16 mi8 re16(do) |
   r mi8 mi16 mi8 re16(do) |
   mi4 re8 do |
@@ -655,8 +655,8 @@ aini_kahila = \relative do''
     sol la4 sol8 sol mi re4 \coda |
   }
   r8 do'4 re8 (re) do la4 |
-  r8 sol4 la8 (la) sol mi4 |
-  r8 do (do) do4 re8 mib re |
+  r8 sol4 la8 (la) sol sol mi |
+  re8 do (do) do4 re8 mib re |
   la' sol fad re mib16 re mib fad re4|
   \DCcoda
 }
@@ -701,7 +701,7 @@ aini_kahila = \relative do''
     \layout { }
     \header
     {
-      piece = \markup { \huge "خانة 2 (Nabil Ghanouchi)" }
+      piece = \markup { \huge "خانة 2 (Nabil Ghannouchi)" }
     }
   }
   \score

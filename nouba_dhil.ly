@@ -152,22 +152,22 @@ khana_three = \relative do''
 {
   \time 6/4
   do32\(sisb la8.(la8)\) r la16 (sisb) do(re) do(sisb) la8(la4.) r8 |
-  sol8.(fasd16) la8.(sol16) fasd8.(mi16) sol16.(fasd32) la16.(sol32) fasd16(misd) sol(fasd) fasd16.(mi32 re8) |
+  sol8.(fasd16) la8.(sol16) fasd8.(mi16) sol16.(fasd32) la16.(sol32) fasd16(mi) sol(fasd) fasd16.(mi32 re8) |
   r4 la'16(sol sol fasd) fasd(mi) sol(fasd) fasd16.(mi32 re8) r8 mi16 (fa) mi (fa) re8( |
   re16) misb8. sol,16(la32 sisb do re misb fa) sol4 sol8 la sol16(sib) la (sol32 fasd) sol8 r |
 }
 khana_four = \relative do'
 {
   \time 6/4
-  r8 do16 (reb) mi (fa) sol(lab) sol(fa) mi(re) do4 r8 sol'16(la) sol8(fa) |
+  r8 do16 (reb) mi (fa) sol(lab) sol(fa) mi(reb) do4 r8 sol'16(la) sol8(fa) |
   mi(re) sol(lab) si16(do) lab(si) sol(lab) fa(sol) mi (fa mi reb) do4 |
   r8 sol'16 sol la16.(fa32) sol16.(fa32 mi16) fa16. (mi32 re16) mi16.(re32 do8) r8 do16(re) do(re) do8( |
-  re16) misb8 (fa16) sol8 r la16 sol fa8\(( fa) mi\) re do16 mi re4 |
+  re16) misb8 (fa16) sol8 r la16 sol fa8\(( fa) misb\) re do16 misb re4 |
 }
 touq = \relative do''
 {
   \time 6/8
-  sol16(fasd re8) fasd16(misb) fa8 sol4 |
+  sol16(fasd re8) fasd16(misb) fasd8 sol4 |
   sol16(fasd) sol8 la8 la16 la la8 la |
   sol8 la16(sib) sol16 la fa sol misb fa re misb |
   do8 r misb16(fa) re(misb) do8 r |
@@ -367,20 +367,20 @@ btayhi_one = \relative do''
 fargha_btayhi = \relative do'
 {
   \time 4/4
-  r8 misb16 fa sol8 sol la16 sol32(la) sol16 fa sol4 |
-  r8 la16 sisb do sisb do8(re16) sib8(la16) la(sol) sol(fa) |
-  do'16 sib32(do) sib16(la) la(sol) sol(fa) sol8 sib16(la) sol fa misb re |
-  do8 misb16 fa sol(lab) si(do) re(do) si(lab) sol4 |
-  r8 re'16 re re8 si(si16) sol8(lab16) si16(do) si lab |
-  sol8 do16 do do si do8(re16) sib8(la16) la(sol) sol(fa) |
-  do'\(sib32(do)\) sib16(la) la(sol) sol(fa) sol8 sib16(la) sol fa misb32(re do16) |
-  sol'8(fa) sol(la) sol\(la16(sib)\) la\((sol) fa8\) |
-  fa8(misb) fa(sol) fa\((sol16) la\) sol16(fa) misb8 |
-  misb8(re) misb(fa) misb\((fa16)sol16\) fa\((misb)re8\) |
-  fa16 misb re do sisb la sol8 la16(sol) la sisb do8 r |
-  sol'16(fa) fa(misb) misb(re) re(do) re8 fa16(misb) re16(do) do(sisb) |
-  sisb8 la16\(sol(sol8)\) la(sol16) la8 sisb16 do8 r |
-  re8(misb) sol misb(do16) re8(sisb16) do8 r |
+  %r8 misb16 fa sol8 sol la16 sol32(la) sol16 fa sol4 |
+  %r8 la16 sisb do sisb do8(re16) sib8(la16) la(sol) sol(fa) |
+  %do'16 sib32(do) sib16(la) la(sol) sol(fa) sol8 sib16(la) sol fa misb re |
+  %do8 misb16 fa sol(lab) si(do) re(do) si(lab) sol4 |
+  %r8 re'16 re re8 si(si16) sol8(lab16) si16(do) si lab |
+  %sol8 do16 do do si do8(re16) sib8(la16) la(sol) sol(fa) |
+  %do'\(sib32(do)\) sib16(la) la(sol) sol(fa) sol8 sib16(la) sol fa misb32(re do16) |
+  %sol'8(fa) sol(la) sol\(la16(sib)\) la\((sol) fa8\) |
+  %fa8(misb) fa(sol) fa\((sol16) la\) sol16(fa) misb8 |
+  %misb8(re) misb(fa) misb\((fa16)sol16\) fa\((misb)re8\) |
+  %fa16 misb re do sisb la sol8 la16(sol) la sisb do8 r |
+  %sol'16(fa) fa(misb) misb(re) re(do) re8 fa16(misb) re16(do) do(sisb) |
+  %sisb8 la16\(sol(sol8)\) la(sol16) la8 sisb16 do8 r |
+  %re8(misb) sol misb(do16) re8(sisb16) do8 r |
 }
 btayhi_two = \relative do''
 {
@@ -403,7 +403,7 @@ touchia = \relative do'' {
   \alternative
   {
     { r2_"إستخبار الرباب" | }
-    { \break \time 4/4 sol8 sol16 sol sisb8 sisb do16(re) do(re) sisb4 }
+    { \break \time 4/4 sol8 sol16 sol sisb8 sisb do16(re) do(re) sisb4 | }
   }
   \repeat volta 2
   {
@@ -468,7 +468,6 @@ touchia = \relative do'' {
     r8 do16(sisb) la16(sol) la8 sisb32(do sisb16 la do) sisb4 |
   }
   \break r1_"إستخبار  العود العربي" |
-  \break r1_"قصيدة في رست الذيل : حلفت يمينا لا أحب سواكم   ولا شاقني إلا نسيم هواكم "_"سقاني الهوى كأسا من الحب صافياً   فيا ليته لما سقاني سقاكم " |
 }
 draj_one = \relative do'' {
   \time 6/4
@@ -478,16 +477,193 @@ draj_one = \relative do'' {
   fa8(sol) fa(misb) re4 la'8.(sol16) sib(la sol fa) misb(re do8) |
   misb(fa) sol(la) sol8.(fa16) sol8.(misb16) fa8.(misb16) misb(re do8) |
   re8(misb) re(do) sisb(sol) la(sisb) do r r4 |
-  \break \mark \markup { \huge "درج" } r1 r2 |
+  \time 3/8 \break \mark \markup { \huge "باسم عن ﻵل" } fa4. |
+  sol8 fa4 |
+  re16( mi do8) fa8( |
+  fa) sol sol |
+  la sib16( do la sol |
+  sol8) fa16( sol fa misb) |
+  re8 misb16 sol fa8( |
+  fa4) r8 |
+  sol4. |
+  sol8 sol4( |
+  sol4) sol16(la) |
+  fa(sol) misb(fa) re8 |
+  misb4 fa8( |
+  fa) sol(la) |
+  sol(fa) la( |
+  la) sol r |
+  do, re do |
+  re misb16(fa re misb |
+  do8) r misb( |
+  misb) sol sol |
+  fa16(sol fa sol) misb(fa |
+  misb fa) re(misb re misb) |
+  do8 re misb16(fa |
+  re misb) do8 r |
+  do'4.( |
+  re8) do16(re do re) |
+  sisb(do sisb do) la(sib |
+  la sib) sol8 r |
+  sol sol16(fa) sol8 |
+  sol16(fa) misb8.(re16) |
+  la'8.(sol16) sol8( |
+  fa16) misb misb32(fa misb16 re do) |
+  fa8(misb16 re) do8( |
+  re8) misb16(fa re misb |
+  do8) r misb( |
+  misb) sol sol |
+  fa16(sol fa sol) misb(fa |
+  misb fa) re(misb re misb) |
+  do8 re misb16(fa |
+  re misb) do8 r |
+  do'4.( |
+  re8) do16(re do re) |
+  sisb(do sisb do) la(sib |
+  la sib) sol8 r |
+  \time 6/4
+  sol8.(fa16) sol8.(fa16) misb8.(re16) la'8.(sol16) sol8 fa16(misb) misb(re) do8 |
+  \repeat volta 2
+  {
+    do'8.(sisb16) do8 do sisb8.(la16) do8.(sisb16) re16 do sisb la sol r sol8 |
+    do16(re do re) sisb(do sisb do) la(sib la sib) sol(la sol fad) mib sol(fad mib) re(mib do8) |
+    fa(misb16 re) do8 re misb16(fa) re(misb do8) r misb4 sol8 sol |
+    fa16(sol fa sol) misb(fa misb fa) re(misb re misb) do(sisb la sisb) do4 r |
+  }
 }
 khafif_one = \relative do'' {
   \time 6/4
-  r1 r2 |
-  \break \mark \markup { \huge "خفيف" } r1 r2 |
+  \repeat percent 2 { sol8 r do re misb8.(re16) fa8.(misb16) misb8.(re16) do4 | }
+  r4 sol8 sol sol(la) fa(sol) misb(fa) re4 |
+  misb4 fa sol8.(fa16) la8.(sol16) sol4. r8 |
+  do4. sisb8 la4 do16(re do8) sisb16(do sisb8) la16(sisb la8) |
+  sol4. r8 fa(re) misb(fa) sol4 r |
+  do4. sisb8 la4 do16(re do8) sisb16(do sisb8) la16(sisb la8) |
+  sol4. fa8 la4 sol4 misb8(fa) misb(re) |
+  do4 r r1 |
+  \break \mark \markup { \huge "بالله اش كانت ذنوبي" }
+  r4 misb8 misb sol8.(fad16) sol8.(fad16) sol4 fa8(misb16 re) |
+  misb8 r sol sol16(fad) sol4 sol fa8.(re16) misb8 misb |
+  sol4 fad8.(misb16) sol8.(misb16) fad(misb) misb(re) do re8(do16) do4 |
+  r do'8(sisb do) la do(sisb) sisb16(do sisb8) la8 sol |
+  r sol sol sol sol do sisb do la sib sol(fad) |
+  sol4 fad8(misb) misb sol fad(misb) re8.(do16) do4 |
+  r4 fa8 fa fa16(misb) sol(fa) fa8.(misb16) sol8 la16(fa) fa(misb) misb(re) |
+  r4 la'8 la la4\((la8.) sol16\) sol8.(fa16) fa8.(misb16) |
+  sol8.(fa16) fa8.(misb16) sol8.(fa16) fa8.(misb16) misb8.(re16) re4 |
+  r re8(misb) fa4 sol8 misb fa4(misb8 re) |
+  la'8.(sol16) sol4 fa16(misb) sol(fa) fa8.(misb16) sol8.(fa16) fa(misb) misb(re) |
+  r4 re8(misb) fa4 sol8 misb fa4 r8 fa |
+  la4 sol fa misb re do |
+  sisb la8(sol) do4 do8 do misb16(re) fa(misb) misb(re do8) |
+  r4 fa8(misb fa) re fa(misb) misb16(fa misb8) re8(do) |
+  r8 sol'8 sol sol16(fad) sol8.(fad16) sol4 fad8.(misb16) misb8(re) |
+  sol4(fad8 misb) sol8.(misb16) fa16(misb) misb(re) do re8(do16) do4 |
+
+  r4 sol'8(fad) sol la\((la) sol\) la16 (sib la sol) fad4 |
+  r4 fad8(sol) la(sib) la(sol) fa(mib) re4 |
+  fad8.(mib16) fa4 sol8.(fad16) fad8.(misb16) fad(misb) misb\((re) re4\) |
+  r4 sol8(fad) sol(la) sisb do(la16) do(sisb la) sol4 |
+  r4 fad8(sol) la(sib) la(sol) fa(mib) re4 |
+  fad8.(mib16) fa4 sol8.(fad16) fad8.(misb16) fad(misb) misb(re re4) |
+  r4 fa8 fa fa16(misb) sol(fa) fa8.(misb16) sol8 la16(fa) fa(misb) misb(re) |
+  r4 la'8 la la4\((la8.) sol16\) sol8.(fa16) fa8.(misb16) |
+  sol8.(fa16) fa8.(misb16) sol8.(fa16) fa8.(misb16) misb8.(re16) re4 |
+  r4 re8(misb) fa4 sol8 misb(fa4) misb8(re) |
+  la'8.(sol16) sol4 fa16(misb) sol(fa) fa8.(misb16) sol8.(fa16) fa(misb) misb(re) |
+  r4 re8(misb) fa4 sol8 misb fa4 r8 fa |
+  la4 sol fa misb re do |
+  sisb4 la8(sol) do4 do8 do misb16(re) fa(misb) misb(re do8) |
+  r4 fa8(misb fa) re(fa) misb misb16(re misb8 re do) |
+  r8 sol' sol sol16(fad) sol8.(fad16) sol4 fad8.(misb16) misb8(re8) |
+  sol4 fad8(misb) sol8.(misb16) fa(misb) misb\((re) do\) re8(do16) do4 |
+
+  r4 sol' sol8(la) sol(fa) sol16(la sol fa mi4) |
+  r4 do8 re do re do si do re mi fa |
+  sol r sol sol misb8.(re16) misb8.(sol16) fa8.(re16) do4 |
+  r4 do'8.(sisb16 la) r sisb8\((sisb16) la sol fa\) sol(la sol fa) mi4 |
+  r4 sol8 sol la4\((la8.) sol16\) sol8.(fa16) fa8.(misb16) |
+  misb8.(re16 do8) re misb8.(re16) misb8.(sol16) fa8.(re16) do4 |
+  r4 fa8 fa fa16(misb) sol(fa) fa8.(misb16) sol8(la16 fa) fa(misb) misb(re) |
+  r4 la'8 la la4\((la8.) sol16\) sol8.(fa16) fa8.(misb16) |
+  sol8.(fa16) fa8.(misb16) sol8.(fa16) fa8.(misb16) misb8.(re16) re4 |
+  r4 re8(misb) fa4(sol8) misb(fa4) misb8(re) |
+  la'8.(sol16) sol4 fa16(misb) sol(fa) fa8.(misb16) sol8.(fa16) fa(misb) misb(re) |
+  r4 re8(misb) fa4\((sol8)\) misb fa4 r8 fa |
+  la4 sol fa misb re do |
+  sisb(la8 sol) do4 do8 do misb16(re) fa(misb) misb(re) do8 |
+  r4 fa8(misb fa) re(fa) misb misb16(fa misb8 re do) |
+  r8 sol' sol sol16(fad) sol8.(fa16) sol4 fa8.(misb16) misb8(re) |
+  sol4 fad8(misb) sol8.(misb16) fa(misb) misb(re do) re8(do16) do4 |
 }
-khatem_one = \relative do' {
+khatem_one = \relative do'' {
   \time 6/8
-  r2 r4 |
+  \partial 4 la4 |
+  sisb do2( |
+  sisb4) re do |
+  sisb(la8) do(sisb la) |
+  la2 la8(sisb |
+  la sol) la4 sisb |
+  do2 la4 |
+  sisb4 do2( |
+  sisb4) re do |
+  sisb(la8) do(sisb la) |
+  sol4 r4 la( |
+  la8) la la4 la |
+  la8(sib la sol) fa4 |
+  sol la2( |
+  la4) la la |
+  la(sol8) la4(sol8) |
+  fa'8(misb re) r8 la4 |
+  sisb do8(re) sisb(do) |
+  la4 sol sol |
+  fa(misb8) sol(fa misb |
+  re) r r4 sol |
+  sol sol8(fa misb re |
+  do) r re4 re |
+  misb4(re8) misb4(fa8) |
+  sol2 la4 |
+  sisb do8(re) sisb(do) |
+  la4 sol sol |
+  fa(misb8) sol(fa misb) |
+  re r r4 do' |
+  do la sisb |
+  do re re |
+  misb8(re do) re(do sisb) |
+  do2 la4 |
+  sisb do2( |
+  sisb4) re do |
+  sisb4(la8) do(sisb la) |
+  sol2 fa'8(misb) |
+  misb(re) re(do) do(sisb) |
+  do2 la4 |
+  sisb do2( |
+  sisb4) re do |
+  sisb(la8) do(sisb la) |
+  sol4 r la( |
+  la8) la la4 la |
+  la8(sib la sol) fa4 |
+  sol4 la2( |
+  la4) la la |
+  la(sol8) la4(sol8) |
+  fa(misb re) r la'4( |
+  sisb) do8(re) sisb(do) |
+  la4 sol sol |
+  fa(misb8) sol(fa misb) |
+  re4 r sol |
+  sol sol8(fa misb re) |
+  do8 r re4 re |
+  misb(re8) misb4(fa8) |
+  sol4 r la |
+  sisb do8(re) sisb(do) |
+  la4 sol sol |
+  fa(misb8) sol(fa misb) |
+  re4 r do'\fermata( |
+  sisb8) re( do sisb la) sol\fermata |
+  r4 sol la |
+  sisb do la |
+  sol_\fermata r8 misb re(fa) |
+  misb8._\fermata do16 re8._\fermata sisb16 do4_\fermata |
 }
 barwel_one = \relative do'
 {
@@ -507,8 +683,8 @@ barwel_one = \relative do'
   }
   \alternative
   {
-    { re16 fa(misb re do r) do8 }
-    { re16 fa(misb re do8) do }
+    { re16 fa(misb re do r) do8 | }
+    { re16 fa(misb re do8) do | }
   }
   do16 re8 re16 la8 sisb |
   do4 r8 do'8 |
@@ -634,14 +810,14 @@ dkhoul_brawel_one = \relative do''
   {
     \new Staff \btayhi_one
     \layout { }
-    \header { piece = \markup { \huge "بطايحي الأول" } }
+    \header { piece = \markup { \huge "غرست الوداد" } }
   }
-  \score
-  {
-    \new Staff { \fargha_btayhi \btayhi_two }
-    \layout { }
-    \header { piece = \markup { \huge "فارغة" } }
-  }
+  %\score
+  %{
+  %  \new Staff { \fargha_btayhi \btayhi_two }
+  %  \layout { }
+  %  \header { piece = \markup { \huge "فارغة" } }
+  %}
   \score
   {
     \new Staff \touchia
@@ -652,13 +828,13 @@ dkhoul_brawel_one = \relative do''
   {
     \new Staff \dkhoul_brawel_one
     \layout { }
-    \header { piece = \markup { \huge "دخول براول" } }
+    \header { piece = \markup { \huge "خمرة الحب اسكرتني" } }
   }
   \score
   {
     \new Staff \barwel_one
     \layout { }
-    \header { piece = \markup { \huge "براول" } }
+    \header { piece = \markup { \huge "فق يا الخمار" } }
   }
   \score
   {
@@ -676,7 +852,7 @@ dkhoul_brawel_one = \relative do''
   {
     \new Staff \khatem_one
     \layout { }
-    \header { piece = \markup { \huge "ختم" } }
+    \header { piece = \markup { \huge "ختم يا اهيل الحمى" } }
   }
   %\score
   %{

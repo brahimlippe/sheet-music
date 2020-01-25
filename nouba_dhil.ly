@@ -390,83 +390,161 @@ btayhi_two = \relative do''
 touchia = \relative do'' {
   \key la \bayati
   \time 2/4
+  % version du sifr incomplete
+  %\repeat volta 2
+  %{
+  %  \repeat percent 2 { r8 re16 re re8 re | re16(do) do(sisb) sisb4 | }
+  %  sol8 sol sisb sisb |
+  %  do16(re) do(re) sisb4 |
+  %  do16(re) do(re) sisb(do) sisb(do) |
+  %  la16(sisb la sol) sisb4 |
+  %  sol16 la sisb do re(do) do(sisb) |
+  %  la(sol) do(sisb) sisb4\fermata |
+  %}
+  %\alternative
+  %{
+  %  { r2_"إستخبار الرباب" | }
+  %  { \break \time 4/4 sol8 sol16 sol sisb8 sisb do16(re) do(re) sisb4 | }
+  %}
+  %\repeat volta 2
+  %{
+  %  r8 sisb16 do re8 re re16(do) sisb(do) re8 do |
+  %  re fa16(mi) re(mi) do(re) sisb(la) do(sisb) sisb32(do sisb16 la sol) |
+  %  do8.(sisb16) re32 do sisb8(la16) do32(sisb) la8(sol16) fa'16(mi) re(do) |
+  %}
+  %\alternative
+  %{
+  %  {
+  %    sisb32(do sisb16 la sol) r8 la16 sisb do(re) sisb(do) sisb32(do sisb16 la sol) |
+  %    r8 do16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb32(do sisb16 la sol) |
+  %  }
+  %  { sisb16 la sol fasd fasd8 fasd8(fasd16) sol8(la16) sisb32(do sisb16 la sol) | }
+  %}
+  %r8 la16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb32(do sisb16 la sol) |
+  %r8 do16 do do8 do(do16) do(sisb la) sisb4 |
+  %r8 sisb16 do re8 re re16 do sisb do re8 do |
+  %re8 fa16(mi) re(mi) do(re) sisb(la) do(sisb) sisb32(do sisb16 la sol) |
+  %do8.(sisb16) re32(do) sisb8(la16) do32(sisb) la8(sol16) fa' mi re do |
+  %sisb(la) sol(fasd) fasd8 fasd(fasd16) sol8(la16) sisb32(do sisb16 la sol) |
+  %r8 la16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb16.(la32 sol8) |
+  %sol16 do sisb do la sib sol la fad(sol) mib(fad) re(mib) do sol' |
+  %sol(fa) fa(misb) misb(re) re(do) re8 fa16 misb re do sisb la |
+  %sol8 re''16 re16 re8 re do16(re) do(re) mi8.(re16) |
+  %\repeat volta 2
+  %{
+  %  re(do) do(sisb) sisb(la) la8(la16) sol8(la16) sisb(do) sisb(la) |
+  %  sol8 la16(sisb) do(sisb) do8(sisb16) do8 do16 mi8 re |
+  %  sisb8 la16(sisb) la(sisb) sol8 \grace mi8 re'8.(do16) sib32(do sib16 la sol) |
+  %}
+  %\alternative
+  %{
+  %  { sol8 re'16 re re8 re do16(re) do(re) mi8.(re16) | }
+  %  { re8 do16(re) mi16. re32 do8 r16 do sisb do re16.(do32) sisb8 | }
+  %}
+  %\repeat volta 2
+  %{
+  %  r16 sisb la sisb do16.(sisb32 la8) r16 la sol la sisb(do) sisb(la) |
+  %  sol8 la16(sisb) do sisb do8(sisb16) do8 do16 mi8 re |
+  %}
+  %\alternative
+  %{
+  %  { sisb16(do) sisb(do) la(sisb) sol8 re'8.(dod16) sib32(dod sib16 la sol) | }
+  %  { sisb16(do) sisb(do) la(sisb) sol8 do16(re) do(sisb) do(re) do(sisb) | }
+  %}
+  %la8 la16 sisb do re do8(sisb16) do8(sisb16) do32(re do16 sisb la) |
+  %\repeat volta 2
+  %{
+  %  r8 do16(sisb) la(sol) la8 sisb do re32(mi re16 do sisb) |
+  %  sisb32(do sisb16 la sol) r8 do16 re mi(do) re(sisb) do32(re do16 sisb la) |
+  %  r8 do16(sisb) la(sisb) sol8(sol16) do8(re16) mi8.(re16) |
+  %  do16(re) do(sisb) la8 do sisb16 re do sisb la8 r |
+  %}
+  %\alternative
+  %{
+  %  { fa16 mi re do sisb la sol8(sol16) la8 sisb16 do4 | }
+  %  { r1 | }
+  %}
+  %\repeat volta 2
+  %{
+  %  r8 do16(sisb) la16(sol) la8 sisb32(do sisb16 la do) sisb4 |
+  %}
+  %\break r1_"إستخبار  العود العربي" |
   \repeat volta 2
   {
     \repeat percent 2 { r8 re16 re re8 re | re16(do) do(sisb) sisb4 | }
     sol8 sol sisb sisb |
     do16(re) do(re) sisb4 |
     do16(re) do(re) sisb(do) sisb(do) |
-    la16(sisb la sol) sisb4 |
-    sol16 la sisb do re(do) do(sisb) |
-    la(sol) do(sisb) sisb4\fermata |
+    la16(sisb la do) sisb4 |
   }
-  \alternative
-  {
-    { r2_"إستخبار الرباب" | }
-    { \break \time 4/4 sol8 sol16 sol sisb8 sisb do16(re) do(re) sisb4 | }
-  }
+  \break r1_"إستخبار الرباب" |
   \repeat volta 2
   {
-    r8 sisb16 do re8 re re16(do) sisb(do) re8 do |
-    re fa16(mi) re(mi) do(re) sisb(la) do(sisb) sisb32(do sisb16 la sol) |
-    do8.(sisb16) re32 do sisb8(la16) do32(sisb) la8(sol16) fa'16(mi) re(do) |
+    \break \repeat percent 2 { r8 re16 re re8 re | re16(do) do(sisb) sisb4 | }
+    sol8 sol sisb sisb |
+    do16(re) do(re) sisb4 |
+    do16(re) do(re) sisb(do) sisb(do) |
+    la16(sisb la do) sisb4 |
+  }
+  \time 4/4
+  \break sol8 sol16 sol sisb8 sisb do16(re) do(re) sisb4 |
+  \repeat volta 2
+  {
+    r8 sisb16 do re8 re re16 do sisb do re8 do |
+    re fa16 mi re do do sisb do re sisb do sisb16. la32 sol8 |
+    do8. sisb16 re32 do sisb8 la16 do32 sisb la8 sol16 fa' mi re do |
   }
   \alternative
   {
     {
-      sisb32(do sisb16 la sol) r8 la16 sisb do(re) sisb(do) sisb32(do sisb16 la sol) |
-      r8 do16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb32(do sisb16 la sol) |
+      sisb do sisb32 la sol16 r8 la16 sisb do re sisb do sisb16. la32 sol8 |
+      r8 do16 sisb la sol la sisb do re sisb do sisb16. la32 sol8 |
     }
-    { sisb16 la sol fasd fasd8 fasd8(fasd16) sol8(la16) sisb32(do sisb16 la sol) | }
+    { sisb16 do sisb32 la sol16 r8 fasd8(fasd16) sol8 la16 sisb16. la32 sol8 | }
   }
-  r8 la16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb32(do sisb16 la sol) |
-  r8 do16 do do8 do(do16) do(sisb la) sisb4 |
+  r8 la16 sisb la sol la sisb do re sisb do sisb16. la32 sol8 |
+  r8 do16 do do8 do r16 do sisb la sisb4 |
   r8 sisb16 do re8 re re16 do sisb do re8 do |
-  re8 fa16(mi) re(mi) do(re) sisb(la) do(sisb) sisb32(do sisb16 la sol) |
-  do8.(sisb16) re32(do) sisb8(la16) do32(sisb) la8(sol16) fa' mi re do |
-  sisb(la) sol(fasd) fasd8 fasd(fasd16) sol8(la16) sisb32(do sisb16 la sol) |
-  r8 la16(sisb) la(sol) la(sisb) do(re) sisb(do) sisb16.(la32 sol8) |
-  sol16 do sisb do la sib sol la fad(sol) mib(fad) re(mib) do sol' |
-  sol(fa) fa(misb) misb(re) re(do) re8 fa16 misb re do sisb la |
-  sol8 re''16 re16 re8 re do16(re) do(re) mi8.(re16) |
+  re fa16 mi re do do sisb do re sisb do sisb16. la32 sol8 |
+  do8. sisb16 re32 do sisb8 la16 do32 sisb la8 sol16 fa' mi re do |
+  sisb la sol fasd fasd4(fasd16) sol8 la16 sisb16. la32 sol8 |
+  r8 la16 sisb la sol la sisb do re sisb do sisb16. la32 sol8 |
+  sol'16 do sisb do la sib sol la fa sol misb fa misb16. re32 do16 sol' |
+  sol fa fa misb misb re re do re8 fa16 misb re do sisb32 la sol16 |
   \repeat volta 2
   {
-    re(do) do(sisb) sisb(la) la8(la16) sol8(la16) sisb(do) sisb(la) |
-    sol8 la16(sisb) do(sisb) do8(sisb16) do8 do16 mi8 re |
-    sisb8 la16(sisb) la(sisb) sol8 \grace mi8 re'8.(do16) sib32(do sib16 la sol) |
-  }
-  \alternative
-  {
-    { sol8 re'16 re re8 re do16(re) do(re) mi8.(re16) | }
-    { re8 do16(re) mi16. re32 do8 r16 do sisb do re16.(do32) sisb8 | }
+    re'8 do16 re mi16. re32 do8 r16 do sisb do re16. do32 sisb8 |
+    r16 sisb32 do la16 sisb do16. sisb32 la8 r16 la32 sisb sol16 la sisb do sisb la |
+    sol8 la16 sisb do sisb do8 sisb16 do8 do16 mi16 re re8 |
+    sisb16 do sisb do la sisb sol8 re'8(re16) dod sib8(sib16) la |
   }
   \repeat volta 2
   {
-    r16 sisb la sisb do16.(sisb32 la8) r16 la sol la sisb(do) sisb(la) |
-    sol8 la16(sisb) do sisb do8(sisb16) do8 do16 mi8 re |
+    sol8 sisb16 re do re do8 sisb16 do8 sisb16 do16. sisb32 la8 |
+    sol do16 sisb la16. sol32 la8 sisb do re do16 sisb |
+    sisb8 la16 sol r8 do16 re mi16. do32 re16 sisb do16. sisb32 la8 |
+    sol do16 sisb la sol fasd sol la sisb do re mi8(mi16) re |
+    do re do sisb la8 do sisb16 re do sisb la8 la16 la |
   }
-  \alternative
-  {
-    { sisb16(do) sisb(do) la(sisb) sol8 re'8.(dod16) sib32(dod sib16 la sol) | }
-    { sisb16(do) sisb(do) la(sisb) sol8 do16(re) do(sisb) do(re) do(sisb) | }
-  }
-  la8 la16 sisb do re do8(sisb16) do8(sisb16) do32(re do16 sisb la) |
+  do8 sol16 do8 sol16 do8 sol16 do8 re16 do16. sisb32 la16 sol |
+  r8 do16 sisb la sol la8 sisb do la16 do sisb8( |
+  sisb) la16 sol r8 do sisb16. la32 sol8 la4 |
+  sol8 do16 sisb la sol fasd sol la sisb do re mi8(mi16) re |
+  do re do sisb la8 do sisb16 re do sisb la8 la16 la |
+  do8 sol16 do8 sol16 do8 sol16 do8 re16 do16. sisb32 la16 sol |
+  r8 do16 sisb la sol la8 sisb do la16 do sisb8 |
+  sisb la16 sol r8 do8 sisb16. la32 sol8 la4 |
+  r8 la16 sol mi8 re16 do re do mi re mi re do si |
+  la4(la8) la sib16. la32 sol8 la4 |
+  mi'8 fa16 sol mi fa re mi dod re do sib la4 |
+  sib16. la32 sol16 la sol8 la(la16) sib sib32 la sol16 la4 |
+  mi'8 fa16 sol mi fa re mi dod re dod sib la4 |
   \repeat volta 2
   {
-    r8 do16(sisb) la(sol) la8 sisb do re32(mi re16 do sisb) |
-    sisb32(do sisb16 la sol) r8 do16 re mi(do) re(sisb) do32(re do16 sisb la) |
-    r8 do16(sisb) la(sisb) sol8(sol16) do8(re16) mi8.(re16) |
-    do16(re) do(sisb) la8 do sisb16 re do sisb la8 r |
+    r8 mi'16 fasd sol fasd sol8 fasd16 la8 sol16 fasd16. mi32 re8 |
+    mi8 fasd16 sol mi fasd re mi dod re dod sib la4 |
   }
-  \alternative
-  {
-    { fa16 mi re do sisb la sol8(sol16) la8 sisb16 do4 | }
-    { r1 | }
-  }
-  \repeat volta 2
-  {
-    r8 do16(sisb) la16(sol) la8 sisb32(do sisb16 la do) sisb4 |
-  }
+  r8 re16 dod sib16. la32 sol8 r16 la sol la sib16. la32 sol8 |
   \break r1_"إستخبار  العود العربي" |
 }
 draj_one = \relative do'' {

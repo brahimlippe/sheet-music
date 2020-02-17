@@ -306,7 +306,7 @@ assoummou = \relative do' {
   \repeat volta 4 {
     mi4 (re8 do re) mi |
     fa (sol mi) re (mi do) |
-    sol'4 sol8 sol4 sol8 |
+    sol'4 sol8 la4 sol8 |
     fa4 mi re |
     mi sol fa16 mi re8 |
     do4 re2 |
@@ -555,21 +555,18 @@ dkhoul_btayhi = \relative do''
 {
   \key do \major
   \time 2/4
-  \repeat volta 2
-  {
-    sol8 sol16 sol sol8 la |
-    sol16 la8 sol16 mi8 re |
-    r8 re16 re re8 mi |
-    re16 sol fa sol la4 |
-    r8 la16 sol mi8 re |
-    do mi re do |
-    la sol r8 do' |
-    sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
-    \grace { do16 (sisb } la8) la16 la la8 sol |
-    sib la fad16 sol fad mib |
-    re8 re16 re8. re8 |
-    re16 mi8 re16 sol4 |
-  }
+  sol8 sol16 sol sol8 la |
+  sol16 la8 sol16 mi8 re |
+  r8 re16 re re8 mi |
+  re16 sol fa sol la4 |
+  r8 la16 sol mi8 re |
+  do mi re do |
+  la sol r8 do' |
+  sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
+  \grace { do16 (sisb } la8) la16 la la8 sol |
+  sib la fad16 sol fad mib |
+  re8 re16 re8. re8 |
+  re16 mi8 re16 sol4 |
   \time 4/4
   r8 la16 sol mi8 re do mi re do |
 }
@@ -642,6 +639,7 @@ ya_farhati = \relative do''
 }
 aini_kahila = \relative do''
 {
+  \time 4/4
   \key do \major
   \repeat volta 5
   {
@@ -869,7 +867,7 @@ aini_kahila = \relative do''
     <<
       \new Staff \new DrumStaff
       {
-        \unfoldRepeats \repeat volta 24 \hroub
+        \unfoldRepeats \repeat volta 12 \hroub
         \unfoldRepeats \repeat volta 134 \btayhi
       }
       \new Staff \with {midiInstrument = #"violin"}

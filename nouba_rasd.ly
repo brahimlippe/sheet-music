@@ -88,7 +88,7 @@ taslim = \relative do''
   \time 6/4
   \repeat volta 2
   {
-    r8 sol16 do si8 si la16 la8 sol16 mi8 re mi fad la16. sol32 sol8 |
+    r8 sol16 do si8 si la16 la8 sol16 mi8 re mi fad la16. sol32(sol8) |
     r8 sol16 si la8 la sol16 la8 sol16 mi8 re do re mi16. re32 re8 |
     r8 do16 do do8 re re16 mi8 re16 sol4 sol16 la8 sol16 mi8 re |
     do' sisb la sol fad mib re do re16 mi8 re16 sol4 |
@@ -118,7 +118,7 @@ khana_three = \relative do'
   {
     sol16 do8. (do8) mib re16 sol8 fad16 la8 sol mib16 fad mib re mib16. re32 do8 |
     r8 mib16 fad sol fad sol8 mib16 fad8 re16 mib8 sol16 do sib la sol la sib16. la32 sol8 |
-    r8 do16 sisb do8 la do16 sisb8 re16 do sisb do8 la16 sol do8 do32 re sisb do la sisb sol16 |
+    r8 do16 sisb do8 la do16 sisb8 re16 do sisb do8 la16 sol do8 do32 re sib do la sib sol16 |
     fad8 sol16 do sisb do la8 sib16 sol8 la16 fad sol mib re sol32 la sol la fad16 mib mib32 fad mib fad re16 do |
   }
 }
@@ -136,7 +136,7 @@ khana_four = \relative do''
 touq = \relative do'
 {
   \time 6/4
-  r8 do16 do do8 re re16 mi8 re16 mi8 re re16 mi16 re8 sol4 |
+  r8 do16 do do8 re re16 mi8 re16 mi8 re re16 mi8 re16 sol4 |
   r8 sol16 sol sol8 la sol16 la8 sol16 mi8 re mi16 sol fa mi re do do8 |
   do4 re8 mi fa16 sol fa mi mi fa mi re mi8 fa sol4 |
   \time 3/4
@@ -565,7 +565,7 @@ dkhoul_btayhi = \relative do''
   sisb16 la sol la \grace{ la16 (do } sisb8) sisb16 sisb |
   \grace { do16 (sisb } la8) la16 la la8 sol |
   sib la fad16 sol fad mib |
-  re8 re16 re8. re8 |
+  re8 re16 re16 re8 re8 |
   re16 mi8 re16 sol4 |
   \time 4/4
   r8 la16 sol mi8 re do mi re do |

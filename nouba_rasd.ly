@@ -98,18 +98,11 @@ taslim = \relative do''
 khana_two = \relative do'
 {
   \time 6/4
-  \repeat volta 2
-  {
-    r8 fad4 sol8 r16 la8 sib16 la sol fad sol fad mib re do re4 |
-    r8 fad4 sol8 r16 la sisb do sisb16. la32 sol8 la4. sol8 |
-    r16 mi8 re16 mi8 \grace sol8 (fa16) re do8 do16 re mi16. re32 mi16 fa sol4 r16 la sib do |
-    re8 do la sol r16 re8 mi16 fa8 la sol mi re do |
-  }
-  \alternative
-  {
-    { r8 do16 re mib16. re32 mib16 fad sol8 do do16 sib la sol fad sol fad la sol4 | }
-    { r8 do,16 re mib16. re32 mib16 fad sol8 do do16 sib la sol fad la sol8 r4 | }
-  }
+  r8 fad4 sol8 r16 la8 sib16 la sol fad sol fad mib re do re4 |
+  r8 fad4 sol8 r16 la sisb do sisb16. la32 sol8 la4. sol8 |
+  r16 mi8 re16 mi8 \grace sol8 (fa16) re do8 do16 re mi16. re32 mi16 fa sol4 r16 la sisb do |
+  re8 do la sol r16 re8 mi16 fa8 la sol mi re do |
+  r8 do16 re mib16. re32 mib16 fad sol8 do do16 sib la sol fad sol fad la sol4 |
 }
 khana_three = \relative do'
 {

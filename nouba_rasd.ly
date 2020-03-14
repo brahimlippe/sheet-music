@@ -293,6 +293,46 @@ afnani = \relative do'' {
   }
   \DScoda
 }
+khademni = \relative do'' {
+  \key do \major
+  \time 6/8
+  \repeat volta 2
+  {
+    do4 do do |
+    do4. si8 la4 |
+    sol la sol |
+    sol4. mi8 re4 |
+    do re mi |
+    fa mi re |
+    sol la sol |
+    sol4. mi8 re4 |
+  }
+  \repeat volta 2
+  {
+    sol fa mi8 re |
+    do4 re2 |
+    mi4. fa8 sol4 |
+  }
+  sol4 la sol |
+  mi2. |
+  do4 re do |
+  la2 sol4 |
+  do do re |
+  mib2. |
+  re4 mi8 re mi fa |
+  re2. |
+  \repeat volta 2
+  {
+    sol4 sol fad8 sol |
+    la8 fad4 mi8 re4 |
+    re8 re re4 re8 re( |
+    re8) mib4 fad8 sol4 |
+    mib4 mib mib |
+    mib2. |
+    re4 re sib |
+    re2. |
+  }
+}
 assoummou = \relative do' {
   \key do \major
   \time 6/8
@@ -829,6 +869,12 @@ aini_kahila = \relative do''
     \new Staff \assoummou
     \layout { }
     \header { piece = \markup { \huge "ختم السم من ألسن الأفاعي" } }
+  }
+  \score
+  {
+    \new Staff \khademni
+    \layout { }
+    \header { piece = \markup { \huge "ختم خدمني سعدي" } }
   }
   \score
   {

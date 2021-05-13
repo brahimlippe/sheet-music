@@ -1,64 +1,7 @@
-\language "italiano"
-\include "arabic.ly"
-#(set-global-staff-size 22)
+\version "2.20.0"
+\include "common.ly"
 \header {
   title = \markup { \magnify #2.5 "نوبة الإصبعين" }
-  composer = "Transcription: Brahim SAHBI"
-  copyright = \markup \center-column {
-    \line { مالوف تونس باريس © Mâlouf Tunisien Paris }
-    \line { Direction : Ahmed-Ridha ABBÈS }
-  }
-}
-\paper {
-  bottom-margin = 15
-  indent = 0
-  oddFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
-  evenFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
-  #(define fonts
-  (make-pango-font-tree "Times New Roman"
-                        "Nimbus Sans"
-                        "Luxi Mono"
-                        (/ staff-height pt 20)))
-}
-DCcoda = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.C. al coda" }
-}
-DScoda = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.S. al coda" }
-}
-Segno = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#f #t #t)
-  \mark \markup { \small \musicglyph #"scripts.segno" }
-}
-dkhoul_barwel_s = \drummode {
-  \time 4/4
-  bd8 bd hh sn hh sn sn4 |
-}
-dkhoul_barwel_p = \drummode {
-  \time 4/4
-  bd8 bd hh sn bd4 sn |
-}
-khatem = \drummode {
-  \time 6/8
-  bd4 sn hh |
-}
-khafif = \drummode {
-  \time 6/4
-  bd4 r sn sn sn r |
-}
-draj = \drummode {
-  \time 6/4
-  bd4 bd sn sn sn sn8 sn |
-}
-hroub = \drummode {
-  \time 2/4
-  bd16 hh32 hh sn16 sn bd16 hh sn8 |
-}
-btayhi = \drummode {
-  \time 4/4
-  bd8 hh16 sn8 hh16 sn8 hh8 bd8 sn4 |
 }
 istiftah = \relative do'
 {
@@ -241,7 +184,7 @@ abyat = \relative do'
   re16. do32 do8 r16 la'16 la8 la16 la8 (sol16) sib16 la sol fad |
   sol r do8 (do) sisb do sisb do4 |
   la8 sib16 do la sib sol la fad sol fad mib re4 |
-    \repeat volta 2
+  \repeat volta 2
   {
     \break \mark \markup { \huge "فارغة"} la'8 sib16 (do) la (sib) sol (la) fad (sol fad mib) re4 |
     sol8 sol16 (la) fad8 re mib16 (re mib fad) sol4 |
@@ -294,10 +237,39 @@ dkhoul_btayhi = \relative do''
   r8 do4 do re8 mib re |
   la'8 sol4 fad8 re16 mib8 fad16 re8 r |
 }
-btayhi_one = \relative do''
+btayhi_one = \relative do'
 {
   \time 4/4
-  r1 |
+  r4 r8 re8(re16) sol8(fad16) sol16(fad sol8) |
+  \repeat volta 2 {
+    la2 la16 do sisb do la8.(sib16) |
+    la16 sol fad mib re mib do8 re mib fad sol16 la |
+    fad16 sol mib fad re mib do8 re mib fad sol16 la |
+    fad sol mib fad re4 sol16 fad sol8 la4 |
+    la16 do sisb do la4 r8 la la16 sib la sib |
+    sol8 la16(sib la sib) sol8(sol16) la8(sol16) do8. sisb16 |
+    sisb la do sisb sisb4 re16 do sisb la sol8 r |
+    sol16 do sisb do la8 la16 do sisb do la8(la16) la8. |
+    sol8. sib16 la sol fad mib re8 sol sol4 |
+    fad8 sol8(sol) re(re16) mib8. la8 sib |
+    la16 sol fad mib re mib do8 re mib fad sol16 la |
+    fad16 sol mib fad re mib do8 re mib fad sol16(la) |
+    fad16(sol) mib(fad) re4 r8 re8 sol4 |
+    fad8 sol(sol) fad(fad16) sol8. la8 sib |
+    la16 sol fad mib re mib do8(do) r8 do4( |
+    do4.) do8 re16 mib8 re16 fad mib re do |
+  }
+  \alternative {
+    {re4 r8 re8(re16) sol8(fad16) sol16(fad sol8) |}
+    {re4 re'(dod16) re8(dod16) re8 re16 do |}
+  }
+  re4. re8(re16) dod8(la16) sib8 do16 sib |
+  la4. r8 dod4 sisb16(do sisb la) |
+  sol8 sol(sol) fad(fad16) sol8. la8 sib8 |
+  la16 sol fad mib re do mib8(mib16) sol8 fad16 sol(fad sol8) |
+  la4 sib la8(sol fad mib) |
+  re8 do r8 do8(do16) do8.(do8) re |
+  mib8.(re16) fad mib re do re2 |
 }
 fargha_btayhi = \relative do''
 {
@@ -496,7 +468,7 @@ dkhoul_brawel_one = \relative do''
   {
     \new Staff \btayhi_one
     \layout { }
-    \header { piece = \markup { \huge "بطايحي الأول" } }
+    \header { piece = \markup { \huge "يا من هجرني لالشرع ندعيه" } }
   }
   \score
   {

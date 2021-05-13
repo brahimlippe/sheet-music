@@ -1,65 +1,5 @@
-\language "italiano"
-\include "arabic.ly"
-#(set-global-staff-size 22)
-\header {
-  title = \markup { \magnify #2.5 "نوبة الرصد العبيدي" }
-  composer = "Transcription: Brahim SAHBI et Aymen MAJOUL"
-  copyright = \markup \center-column {
-    \line { مالوف تونس باريس © Mâlouf Tunisien Paris }
-    \line { Direction : Ahmed-Ridha ABBÈS }
-  }
-}
-\paper {
-  bottom-margin = 15
-  indent = 0
-  oddFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
-  evenFooterMarkup = \markup \column { \fill-line { \fromproperty #'header:copyright }}
-  #(define fonts
-  (make-pango-font-tree "Times New Roman"
-                        "Nimbus Sans"
-                        "Luxi Mono"
-                        (/ staff-height pt 20)))
-}
-DCcoda = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.C. al coda" }
-}
-DScoda = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#t #t #f)
-  \mark \markup { \small "D.S. al coda" }
-}
-Segno = {
-  \once \override Score.RehearsalMark #'break-visibility = #'#(#f #t #t)
-  \mark \markup { \small \musicglyph #"scripts.segno" }
-}
-dkhoul_barwel_s = \drummode {
-  \time 4/4
-  bd8 bd hh sn hh sn sn4 |
-}
-dkhoul_barwel_p = \drummode {
-  \time 4/4
-  bd8 bd hh sn bd4 sn |
-}
-khatem = \drummode {
-  \time 6/8
-  bd4 sn hh |
-}
-khafif = \drummode {
-  \time 6/4
-  bd4 r sn sn sn r |
-}
-draj = \drummode {
-  \time 6/4
-  bd4 bd sn sn sn sn8 sn |
-}
-hroub = \drummode {
-  \time 2/4
-  bd16 hh32 hh sn16 sn bd16 hh sn8 |
-}
-btayhi = \drummode {
-  \time 4/4
-  bd8 hh16 sn8 hh16 sn8 hh8 bd8 sn4 |
-}
+\version "2.20.0"
+\include "common.ly"
 istiftah = \relative do'
 {
   do4 re do la sol2 r4 r8 do re mi fa4 mi \grace sol8 (fa4) mi16 fa mi8 re4
@@ -521,8 +461,8 @@ abyat = \relative do''
   }
   \alternative
   {
-    { do mi re4}
-    { do8 mi re do}
+    { do mi re4 }
+    { do8 mi re do }
   }
   re16 do8 la16 sol4 |
   \time 4/4
@@ -696,88 +636,63 @@ aini_kahila = \relative do''
   \score
   {
     \new Staff \istiftah
-    \layout
-    {
-      \context
-      {
-        \Score defaultBarType = ""
-      }
-    }
-    \header
-    {
-      piece = \markup { \huge "إستفتاح" }
-    }
+    \layout { \context { \Score defaultBarType = "" } }
+    \header { piece = \markup { \huge "إستفتاح" } }
   }
   \score
   {
     \new Staff \khana_one
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "مصدر" }
+    \header { piece = \markup { \huge "مصدر" }
     }
   }
   \score
   {
     \new Staff \taslim
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "تسليم" }
+    \header { piece = \markup { \huge "تسليم" }
     }
   }
   \score
   {
     \new Staff \khana_two
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "خانة 2 (Nabil Ghannouchi)" }
+    \header { piece = \markup { \huge "خانة 2 (Nabil Ghannouchi)" }
     }
   }
   \score
   {
     \new Staff \khana_three
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "خانة 3(Nadhir Bouabid)" }
+    \header { piece = \markup { \huge "خانة 3(Nadhir Bouabid)" }
     }
   }
   \score
   {
     \new Staff \khana_four
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "خانة 4(Salem Bnouni)" }
+    \header { piece = \markup { \huge "خانة 4(Salem Bnouni)" }
     }
   }
   \score
   {
     \new Staff \touq
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "طوق" }
+    \header { piece = \markup { \huge "طوق" }
     }
   }
   \score
   {
     \new Staff \silsla
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "سلسلة" }
+    \header { piece = \markup { \huge "سلسلة" }
     }
   }
   \score
   {
     \new Staff \abyat
     \layout { }
-    \header
-    {
-      piece = \markup { \huge "دخول الأبيات" }
+    \header { piece = \markup { \huge "دخول الأبيات" }
     }
   }
   \score
@@ -894,10 +809,7 @@ aini_kahila = \relative do''
   }
   \score
   {
-    \new Staff \with {midiInstrument = #"violin"}
-    {
-      \unfoldRepeats \abyat
-    }
+    \new Staff \with {midiInstrument = #"violin"} { \unfoldRepeats \abyat }
     \midi { \tempo 4 = 80 }
   }
   \score
@@ -983,6 +895,7 @@ aini_kahila = \relative do''
         \unfoldRepeats \ya_hal_tara
         \unfoldRepeats \afnani
         \unfoldRepeats \assoummou
+        \unfoldRepeats \khademni
       }
     >>
     \midi { \tempo 4 = 80 }

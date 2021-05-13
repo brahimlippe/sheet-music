@@ -1,5 +1,5 @@
 .PHONY: all
-all: nouba_rasd.pdf nouba_isbain.pdf nouba_dhil.pdf ya_achaq_fi_zin_libnet.pdf ya_man_bi_sahm_alashfar.pdf
+all: $(filter-out common.pdf, $(patsubst %.ly, %.pdf, $(wildcard *.ly)))
 
 %.pdf: %.ly common.ly
 	lilypond $<

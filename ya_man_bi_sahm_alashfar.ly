@@ -1,4 +1,4 @@
-\language "italiano"
+\include "common.ly"
 \version "2.20.0"
 
 \header {
@@ -12,19 +12,10 @@
                                        "Luxi Mono"
                                        (/ staff-height pt 20)))
 }
-#(ly:set-default-scale (ly:make-scale #(0 5587/10000 15782/10000 249/100 3509775/1000000 406843/100000 498/100)))
+%#(ly:set-default-scale (ly:make-scale #(0 5587/10000 15782/10000 249/100 3509775/1000000 406843/100000 498/100)))
 
-muhayyer_sikah = #`(
-  (0 . 0)
-  (1 . 0)
-  (2 . 0)
-  (3 . 0)
-  (4 . 0)
-  (5 . 0)
-  (6 . ,FLAT)
-) 
 lahn = \relative do' {
-  \key do \muhayyer_sikah
+  \key re \minor
   \time 4/4
   \partial 2 re4 la' |
   \repeat volta 5 {
@@ -83,7 +74,7 @@ dkhoul_brawel = \relative do, {
     \layout { }
   }
   \score {
-    \new Staff \with {midiInstrument = #"violin"} \unfoldRepeats \lahn
+    \new Staff \with {midiInstrument = #"violin"} \unfoldRepeats \tuneMIDI \muhayerSikahTuning \lahn
     \midi { \tempo 4 = 85 }
   }
 } % book score

@@ -63,8 +63,8 @@ voice_intro = \relative do' {
   r4 fa8 solb fa4 misb |
   fa solb fa4. r8 |
   r4 fa8 solb fa4 misb |
-  fa4 solb la16 fa solb misb r4 |
-  r4 fa8 solb fa4 misb |
+  fa4 solb la8 fa solb misb |
+  re4 fa8 solb fa4 misb |
   fa solb fa4. r8 |
 }
 voice = \relative do'' {
@@ -79,32 +79,38 @@ voice = \relative do'' {
     solb8 la4 solb8 fa solb fa4 |
     fa8 solb4 fa8 misb fa misb4 |
   }
-  fa4 misb solb fa |
+  fa misb solb fa |
   fa8 solb8 fa misb re8 misb re fa |
   misb solb fa misb re4 r |
   \voice_on_violin_intro
   \voice_intro
   \repeat volta 2 {
-    r8 fa8 solb4 fa solb |
+    r4 fa8 solb fa4 solb |
     fa solb8 la8 sib4 sib |
   }
   dod4 do sib la4 |
-  solb4. fa8 solb4 r |
+  la4 solb8 fa solb4 r |
+  r4 fa8 misb fa4 r4 |
+  r4 fa8 misb fa8. misb16 re8 misb8 |
+  re misb re4 fa solb |
+  fa misb fa4 solb |
+  la8 fa solb misb re4 fa8 solb |
+  fa4 misb fa4 solb |
+  la8 fa solb misb re4 re8 solb8 |
+  fa4 solb fa misb8 re |
+  solb4 solb8 fa solb4 r4 |
   r4 fa8 misb fa4 r4 |
   r4 fa8 misb fa8. misb16 re8 misb |
-  re8 misb re2. |
-  \repeat volta 2 {
-    r4 fa8 solb fa4 misb |
-    fa4 solb la16 fa solb misb r4 |
-  }
-  fa solb fa misb fa solb la sib |
-  solb8 fa solb4 r2 |
-  fa8 misb fa4 r2 |
-  fa8 misb fa8. misb16 re8 misb misb re |
+  re misb re fa solb4 fa |
+  misb r8 misb8 fa4 misb |
+  re r8 misb fa8. misb16 re8 misb |
+  re misb re4 misb re8 fa |
+  misb solb fa misb re4
 }
+
 notes = \new StaffGroup
   <<
-    \new DrumStaff \repeat unfold 27 \dwik
+    \new DrumStaff \repeat unfold 37 \dwik
     \new Staff \with {
       midiInstrument = #"violin"
       instrumentName = "الفرقة"
@@ -119,24 +125,21 @@ notes = \new StaffGroup
 \new StaffGroup {
   <<
   \new Staff \with {
-    midiInstrument = #"violin"
     instrumentName = "الفرقة"
     shortInstrumentName = "الفرقة"
   }
   \violin
-  \new Staff \with { midiInstrument = #"choir aahs" } \voice
+  \new Staff \with {
+      instrumentName = "الغناء"
+      shortInstrumentName = "الغناء"
+    } \voice
   >>
 }
 \score {
   \tuneMIDI \sabaTuning \unfoldRepeats \transpose re do \new StaffGroup
   <<
-    \new DrumStaff \repeat unfold 59 \dwik
-    \new Staff \with {
-      midiInstrument = #"violin"
-      instrumentName = "الفرقة"
-      shortInstrumentName = "الفرقة"
-    }
-    \violin
+    \new DrumStaff \repeat unfold 65 \dwik
+    \new Staff \with { midiInstrument = #"violin" } \violin
     \new Staff \with { midiInstrument = #"choir aahs" } \voice
   >>
 

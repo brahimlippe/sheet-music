@@ -55,6 +55,28 @@ violin = \relative do'' {
   r1 |
   \violin_intro
   \violin_on_voice_intro
+  \repeat volta 2 {
+    sib'8 r8 r4 r2 |
+    r2 r4 r8 solb16 la |
+  }
+  r1 |
+  r2 r8 solb8 fa solb |
+  r2 r8 fa misb fa |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r2 r8 solb8 fa solb |
+  r2 r8 fa misb fa |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
 }
 voice_on_violin_intro = \relative do' \repeat unfold 8 { r1 | }
 voice_intro = \relative do' {
@@ -105,7 +127,7 @@ voice = \relative do'' {
   misb r8 misb8 fa4 misb |
   re r8 misb fa8. misb16 re8 misb |
   re misb re4 misb re8 fa |
-  misb solb fa misb re4
+  misb solb fa misb re4 r4 |
 }
 
 notes = \new StaffGroup
